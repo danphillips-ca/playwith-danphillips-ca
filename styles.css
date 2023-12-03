@@ -53,6 +53,11 @@ body {
   font-size: 22px; /* Larger font size for modal content */
   color: #000;
   margin: auto; /* Center the modal content */
+  position: fixed; /* Fixed positioning */
+  top: 50%; /* Position from top */
+  left: 50%; /* Position from left */
+  transform: translate(-50%, -50%); /* Center horizontally and vertically */
+  z-index: 9999; /* Set a higher z-index to ensure it appears above other elements */
 }
 
 footer {
@@ -62,7 +67,9 @@ footer {
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   text-align: left;
   padding: 20px;
-  margin-top: auto;
+  position: fixed; /* Fixed positioning */
+  bottom: 0; /* Position at the bottom */
+  width: 100%; /* Occupy full width */
 }
 
 footer a {
