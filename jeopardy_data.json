@@ -13,7 +13,6 @@
           "question": "He was the first President of the United States.",
           "answer": "Who is George Washington?"
         },
-        // More questions for the "History" category...
       ]
     },
     {
@@ -29,9 +28,7 @@
           "question": "This famous scientist developed the theory of general relativity.",
           "answer": "Who is Albert Einstein?"
         },
-        // More questions for the "Science" category...
       ]
     },
-    // More categories...
   ]
 }
