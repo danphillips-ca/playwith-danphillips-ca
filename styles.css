@@ -70,7 +70,8 @@ body {
 .question, .answer {
   font-size: 34px; /* Increase the font size */
   text-align: center; /* Center the text */
-  height: 100%;
+  height: 80%;
+  vertical-align: middle;
 }
 
 footer {
