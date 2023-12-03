@@ -46,8 +46,7 @@ body {
 }
 
 .question-selected {
-  color: #807A55 .5 !important;
-  text-shadow: 1px 1px 2px .5 black !important;
+  color: #807A55 !important;
 }
 
 .modal-content {
