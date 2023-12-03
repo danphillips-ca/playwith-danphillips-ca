@@ -38,10 +38,11 @@ function displayJeopardyBoard(categories) {
   });
 }
 
-// Your existing JavaScript code for fetching JSON and displaying the Jeopardy board
-// ...
+let questionModal = null; // Variable to store the current question modal
 
 function showQuestionModal(question, answer) {
+  closeModal(); // Close any existing modal before displaying a new one
+
   const modal = document.createElement('div');
   modal.className = 'modal';
   modal.innerHTML = `
@@ -53,12 +54,19 @@ function showQuestionModal(question, answer) {
   document.body.appendChild(modal);
   document.body.style.overflow = 'hidden'; // Disable scrolling when modal is open
 
+  questionModal = modal; // Store the reference to the current question modal
+
   modal.addEventListener('click', function () {
     showAnswerModal(answer); // Pass the answer to showAnswerModal
   });
 }
 
 function showAnswerModal(answer) {
+  if (questionModal !== null) {
+    questionModal.remove(); // Close the question modal
+    questionModal = null; // Reset the reference to the question modal
+  }
+
   const modal = document.createElement('div');
   modal.className = 'modal';
   modal.innerHTML = `
@@ -80,5 +88,9 @@ function closeModal() {
   if (modal) {
     modal.remove();
     document.body.style.overflow = ''; // Enable scrolling when modal is closed
+    if (questionModal !== null) {
+      questionModal.remove(); // Close the question modal if it exists
+      questionModal = null; // Reset the reference to the question modal
+    }
   }
 }
