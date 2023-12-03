@@ -4,6 +4,7 @@
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
     margin: 20px;
+    background: #f3f3f3;
   }
   
   .jeopardy-category {
@@ -69,7 +70,8 @@ body {
 footer {
   background-color: #d6d6d6;
   color: #363636;
-  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  line-height: 1.5;
+    font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   text-align: left; /* Align footer content to the left */
   padding: 20px;
   margin-top: auto; /* Push footer to the bottom */
