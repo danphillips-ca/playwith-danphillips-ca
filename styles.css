@@ -63,12 +63,13 @@ body {
   left: 50%; /* Position from left */
   transform: translate(-50%, -50%); /* Center horizontally and vertically */
   z-index: 9999; /* Set a higher z-index to ensure it appears above other elements */
+  vertical-align: middle;
+
 }
 
 .question, .answer {
   font-size: 34px; /* Increase the font size */
   text-align: center; /* Center the text */
-  vertical-align: middle;
 }
 
 footer {
