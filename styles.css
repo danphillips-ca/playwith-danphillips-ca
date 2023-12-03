@@ -17,6 +17,7 @@ body {
 
 .jeopardy-category {
   border-top: 8px solid black; /* Thicker top border */
+  border-bottom: 8px solid black; /* Thicker top border */
   border-left: 6px solid black; /* Thicker left border */
   border-right: 6px solid black; /* Thicker right border */
   padding-top: 25px; /* Increased padding top */
@@ -33,6 +34,7 @@ body {
   border-top: 6px solid black; /* Thicker border */
   border-left: none;
   border-right: none;
+  margin-top: 6px;
   padding: 20px; /* Increased padding */
   text-align: center;
   cursor: pointer;
