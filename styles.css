@@ -30,10 +30,9 @@ body {
 }
 
 .jeopardy-question {
-  border: 6px solid black; /* Thicker border */
+  border-top: 6px solid black; /* Thicker border */
   border-left: none;
   border-right: none;
-  margin-top:20px;
   padding: 20px; /* Increased padding */
   text-align: center;
   cursor: pointer;
