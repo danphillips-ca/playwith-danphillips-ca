@@ -39,12 +39,12 @@
           "answer": "What is an Elk?"
         },
         {
-          "value": 800,
+          "value": 600,
           "question": "In North America, we use this name for Reindeer when they are wild, but both are actually the same species: <i>Rangifer tarandus</i>.",
           "answer": "What is a Caribou?"
         },
         {
-          "value": 600,
+          "value": 800,
           "question": "This horned beast travels with Santa to strike naughty children with birch sticks.",
           "answer": "Who is Krampus?"
         }
