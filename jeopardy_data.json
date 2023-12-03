@@ -1,52 +1,102 @@
 {
   "categories": [
     {
-      "title": "History",
+      "title": "A Very Local Christmas",
       "questions": [
         {
           "value": 200,
-          "question": "This war, also known as the Great War, ended in 1918.",
-          "answer": "What is World War I?"
+          "question": "This tree has haunted shoppers of Mic Mac Mall in Dartmouth since 1983.",
+          "answer": "Who is Woody the talking Christmas Tree?"
         },
         {
           "value": 400,
-          "question": "He was the first President of the United States.",
-          "answer": "Who is George Washington?"
+          "question": "Each year, this American city receives a Christmas Tree in thanks for support provided after the Halifax Explosion.",
+          "answer": "Where is Boston?"
         },
         {
           "value": 600,
-          "question": "Placeholder.",
-          "answer": "Placeholder Result?"
+          "question": "This county claims fame as the Balsam Fir Christmas Tree Capital of the World.",
+          "answer": "What is Lunenburg County?"
         },
         {
           "value": 800,
-          "question": "This war, also known as the Great War, ended in 1918.",
-          "answer": "What is World War I?"
+          "question": "In the heart of Cape Breton, this island is home to just 300 residents. Yet it receives thousands of seasonal packages each year.",
+          "answer": "Where is Christmas Island?"
         }
       ]
     },
     {
-      "title": "Science",
+      "title": "Four Marleys Mocking",
       "questions": [
         {
           "value": 200,
-          "question": "This fundamental particle has a positive charge.",
-          "answer": "What is a proton?"
+          "question": "This is the first ghost to appear in A Christmas Carol.",
+          "answer": "Who is Jacob Marley."
         },
         {
           "value": 400,
-          "question": "This famous scientist developed the theory of general relativity.",
-          "answer": "Who is Albert Einstein?"
+          "question": "This lead singer of the band The Wailers died at the Cedars Of Lebanon Hospital on May 11, 1981.",
+          "answer": "Who is Bob Marley?"
         },
         {
           "value": 600,
-          "question": "Placeholder.",
-          "answer": "Placeholder Result?"
+          "question": "This film featuring Owen Wilson and Jennifer Aniston was released on Christmas Day, 2008.",
+          "answer": "What is Marley and Me?"
         },
         {
           "value": 800,
-          "question": "This war, also known as the Great War, ended in 1918.",
-          "answer": "What is World War I?"
+          "question": "This actress can be seen here wishing a Happy Hanukkah in American Sign Language in this video: https://twitter.com/hashtag/HappyHanukkah?src=hash&amp;ref_src=twsrc%5Etfw",
+          "answer": "Who is Marlee Matlin?"
+        }
+      ]
+    },
+    {
+      "title": "Four Marleys Mocking",
+      "questions": [
+        {
+          "value": 200,
+          "question": "This is the first ghost to appear in A Christmas Carol.",
+          "answer": "Who is Jacob Marley."
+        },
+        {
+          "value": 400,
+          "question": "This lead singer of the band The Wailers died at the Cedars Of Lebanon Hospital on May 11, 1981.",
+          "answer": "Who is Bob Marley?"
+        },
+        {
+          "value": 600,
+          "question": "This film featuring Owen Wilson and Jennifer Aniston was released on Christmas Day, 2008.",
+          "answer": "What is Marley and Me?"
+        },
+        {
+          "value": 800,
+          "question": "This actress can be seen here wishing a Happy Hanukkah in American Sign Language in this video: https://twitter.com/hashtag/HappyHanukkah?src=hash&amp;ref_src=twsrc%5Etfw",
+          "answer": "Who is Marlee Matlin?"
+        }
+      ]
+    },
+    {
+      "title": "Four Marleys Mocking",
+      "questions": [
+        {
+          "value": 200,
+          "question": "This is the first ghost to appear in A Christmas Carol.",
+          "answer": "Who is Jacob Marley."
+        },
+        {
+          "value": 400,
+          "question": "This lead singer of the band The Wailers died at the Cedars Of Lebanon Hospital on May 11, 1981.",
+          "answer": "Who is Bob Marley?"
+        },
+        {
+          "value": 600,
+          "question": "This film featuring Owen Wilson and Jennifer Aniston was released on Christmas Day, 2008.",
+          "answer": "What is Marley and Me?"
+        },
+        {
+          "value": 800,
+          "question": "This actress can be seen here wishing a Happy Hanukkah in American Sign Language in this video: https://twitter.com/hashtag/HappyHanukkah?src=hash&amp;ref_src=twsrc%5Etfw",
+          "answer": "Who is Marlee Matlin?"
         }
       ]
     }
