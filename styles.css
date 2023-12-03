@@ -19,10 +19,11 @@ body {
   border-left: 6px solid black; /* Thicker left border */
   border-right: 6px solid black; /* Thicker right border */
   padding-top: 20px; /* Increased padding top */
-  padding-bottom: 15px; /* Increased padding bottom */
+  margin-bottom: 10px; /* Added margin bottom for space under text */
   text-align: center;
   font-weight: bold;
   background-color: #0055AA;
+  text-shadow: 1px 1px 2px black; /* Added text shadow */
 }
 
 .jeopardy-question {
