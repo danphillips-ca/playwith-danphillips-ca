@@ -30,7 +30,7 @@
       "questions": [
         {
           "value": 200,
-          "question": "Despite being friends with the 'nerdy' Dilton Doiley, this student of Riverdale High is often at risk of being removed from the football team due to his low grades.",
+          "question": "Despite being friends with the 'nerdy' Dilton Doiley, this student of Riverdale High is often at risk of being removed from the football team due to his low grades.<br> <img style='border: 2px solid #363636; width:300px; margin:15px' src='https://lh3.googleusercontent.com/pw/ADCreHeIQAHtndO4RautD0zR5OitehYpaB5GmT7ezlzDOJvc7WctalgA5FIyV4Yq72b6oWyCltOwPw7oFyAICuXU3UzSsdGGd0Z_lsF4DMkOzbR-WnvnSO8qa5y04Xw9DSLKHwGr38c9WCB0K4CTyEhAq_IWDw=w500-h500-s-no-gm' alt='A football player from Riverdale High.'>",
           "answer": "Who is Marmaduke 'Moose' Mason?"
         },
         {
@@ -40,7 +40,7 @@
         },
         {
           "value": 600,
-          "question": "In North America, we use this name for Reindeer when they are wild, but both are actually the same species: <i>Rangifer tarandus</i>.",
+          "question": "In North America we use this name for wild Reindeer, but both are actually the same species. It's latin name is <i>Rangifer tarandus.</i>",
           "answer": "What is a Caribou?"
         },
         {
@@ -55,7 +55,7 @@
       "questions": [
         {
           "value": 200,
-          "question": "This family was featured in the 1989 holiday classic, <i>National Lampoon's Christmas Vacation</i>.",
+          "question": "This family was featured in the 1989 holiday classic, <i>National Lampoon's Christmas Vacation.</i>",
           "answer": "Who are the Griswolds?"
         },
         {
