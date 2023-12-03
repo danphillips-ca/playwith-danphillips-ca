@@ -18,6 +18,7 @@ body {
   border-top: 6px solid black; /* Thicker top border */
   border-left: 4px solid black; /* Thicker left border */
   border-right: 4px solid black; /* Thicker right border */
+  text-shadow: 1px 1px 2px black;
   padding-top: 15px; /* Increased padding */
   padding-bottom: 10px; /* Added padding for space at the bottom */
   text-align: center;
