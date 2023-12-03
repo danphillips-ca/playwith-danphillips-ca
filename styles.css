@@ -18,6 +18,7 @@ body {
   border-top: 4px solid black;
   border-left: 2px solid black; /* Added left border */
   border-right: 2px solid black; /* Added right border */
+  text-shadow: 1px 1px 2px black;
   padding-top: 10px;
   text-align: center;
   font-weight: bold;
