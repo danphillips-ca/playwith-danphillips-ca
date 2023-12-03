@@ -5,7 +5,7 @@
         "questions": [
           {
             "value": 200,
-            "question": "This war, also known as the Great War, ended in 1918."
+            "question": "This war, also known as the Great War, ended in 1918.",
             "answer": "What is World War I?"
           },
           {
@@ -21,12 +21,12 @@
         "questions": [
           {
             "value": 200,
-            "question": "This fundamental particle has a positive charge."
+            "question": "This fundamental particle has a positive charge.",
             "answer": "What is a proton?"
           },
           {
             "value": 400,
-            "question": "This famous scientist developed the theory of general relativity."
+            "question": "This famous scientist developed the theory of general relativity.",
             "answer": "Who is Albert Einstein?"
           },
           // More questions for the "Science" category...
