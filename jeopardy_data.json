@@ -1,7 +1,7 @@
 {
   "categories": [
     {
-      "title": "A Very Local Christmas",
+      "title": "Home for the Holidays",
       "questions": [
         {
           "value": 200,
@@ -35,19 +35,19 @@
           "answer": "Who is Marmaduke 'Moose' Mason?"
         },
         {
-          "value": 400,
+          "value": 401,
           "question": "Placeholder Question2.",
           "answer": "Placeholder Answer2."
-        },
-        {
-          "value": 600,
-          "question": "Placeholder Question3.",
-          "answer": "What was the name of the Angel in It's A Wonderful Life?"
         },
         {
           "value": 800,
           "question": "In North America, we use this name for Reindeer when they are wild, but both are actually the same species: <i>Rangifer tarandus</i>.",
           "answer": "What is a Caribou?"
+        },
+        {
+          "value": 600,
+          "question": "This horned beast travels with Santa to strike naughty children with birch sticks.",
+          "answer": "Who is Krampus?"
         }
       ]
     },
@@ -55,9 +55,9 @@
       "title": "Christmas is Ruined!",
       "questions": [
         {
-          "value": 12,
-          "question": "Placeholder Question.",
-          "answer": "Placeholder Answer."
+          "value": 200,
+          "question": "This is the family that was featured in the 1989 holiday classic, <i>National Lampoon's Christmas Vacation</i>.",
+          "answer": "Who are the Griswolds?"
         },
         {
           "value": 400,
