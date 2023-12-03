@@ -52,3 +52,35 @@
   font-size: 20px;
   color: #fff;
 }
+
+
+/* CSS for footer styling */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure body fills the entire viewport height */
+  margin: 0;
+}
+
+.jeopardy-board {
+  flex: 1; /* Allow jeopardy board to take remaining space */
+}
+
+footer {
+  background-color: #d6d6d6;
+  color: #363636;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+footer a {
+  font-weight: bold;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease-in-out;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
