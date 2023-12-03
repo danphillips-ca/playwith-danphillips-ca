@@ -46,23 +46,23 @@
         },
         {
           "value": 800,
-          "question": "Placeholder Question4.",
-          "answer": "Placeholder Answer4."
+          "question": "In North America, we use this name for Reindeer when they are wild, but both are actually the same species: <i>Rangifer tarandus</i>.",
+          "answer": "What is a Caribou?"
         }
       ]
     },
     {
-      "title": "Category Placeholder 2",
+      "title": "Christmas is Ruined!",
       "questions": [
         {
-          "value": 200,
+          "value": 12,
           "question": "Placeholder Question.",
           "answer": "Placeholder Answer."
         },
         {
           "value": 400,
-          "question": "Placeholder Question2.",
-          "answer": "Placeholder Answer2."
+          "question": "This angel appears to George Bailey as he prepares to jump off a bridge in <i>It's A Wonderful Life.</i>",
+          "answer": "Who is Clarence Odbody?"
         },
         {
           "value": 600,
@@ -71,8 +71,8 @@
         },
         {
           "value": 800,
-          "question": "Placeholder Question4.",
-          "answer": "Placeholder Answer4."
+          "question": "In the 1965 Christmas Special, Linus van Pelt says this about the snowflake that he catches on his tongue.",
+          "answer": "'Needs Sugar!'"
         }
       ]
     },
@@ -86,8 +86,8 @@
         },
         {
           "value": 400,
-          "question": "This lead singer of the band The Wailers died at the Cedars Of Lebanon Hospital on May 11, 1981.",
-          "answer": "Who is Bob Marley?"
+          "question": "Kevin McAllister feared this kindly neighbour, rumoured to be the 'South Bend Shovel Slayer' in Home Alone.",
+          "answer": "'Old Man' Marley?"
         },
         {
           "value": 600,
