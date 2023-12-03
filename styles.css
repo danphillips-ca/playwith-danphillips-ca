@@ -5,6 +5,7 @@ body {
   padding: 0;
   background-color: #eee;
   color: #fff;
+  height: 100%; /* Set body height to 100% for proper footer positioning */
 }
 
 .jeopardy-board {
@@ -18,10 +19,11 @@ body {
   border-top: 8px solid black; /* Thicker top border */
   border-left: 6px solid black; /* Thicker left border */
   border-right: 6px solid black; /* Thicker right border */
-  padding-top: 20px; /* Increased padding top */
+  padding-top: 25px; /* Increased padding top */
   margin-bottom: 10px; /* Added margin bottom for space under text */
   text-align: center;
   font-weight: bold;
+  font-size: 28px; /* Increased font size for category names */
   background-color: #0055AA;
   text-shadow: 1px 1px 2px black; /* Added text shadow */
 }
@@ -68,7 +70,7 @@ footer {
   text-align: left;
   padding: 20px;
   position: fixed; /* Fixed positioning */
-  bottom: 0; /* Position at the bottom */
+  bottom: 0; /* Stick to the bottom */
   width: 100%; /* Occupy full width */
 }
 
