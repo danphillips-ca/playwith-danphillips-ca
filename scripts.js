@@ -28,7 +28,7 @@ function displayJeopardyBoard(categories) {
       questionDiv.textContent = `$${question.value}`;
 
       questionDiv.addEventListener('click', function () {
-        showQuestionModal(question.question);
+        showQuestionModal(question.question, question.answer);
       });
 
       categoryDiv.appendChild(questionDiv);
