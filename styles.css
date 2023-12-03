@@ -9,12 +9,14 @@ body {
 
 .jeopardy-board {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   margin: 20px;
 }
 
 .jeopardy-category {
+  border-top: 2px solid #fff;
+  padding: 10px;
   text-align: center;
   font-weight: bold;
 }
