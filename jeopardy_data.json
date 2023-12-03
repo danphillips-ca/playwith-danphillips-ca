@@ -27,12 +27,12 @@
       ]
     },
     {
-      "title": "Placeholder Category 1",
+      "title": "That's not a Reindeer!",
       "questions": [
         {
           "value": 200,
-          "question": "Placeholder Question.",
-          "answer": "Placeholder Answer."
+          "question": "Despite being friends with the 'nerdy' Dilton Doiley, this student of Riverdale High is often at risk of being removed from the football team due to his low grades.",
+          "answer": "Who is Marmaduke 'Moose' Mason?"
         },
         {
           "value": 400,
@@ -66,7 +66,7 @@
         },
         {
           "value": 600,
-          "question": "Placeholder Question3.",
+          "question": "<iframe width='560' height='315' src='https://photos.app.goo.gl/T51wqDtzhu9GMTKi9' frameborder="0" allowfullscreen></iframe>",
           "answer": "Placeholder Answer3."
         },
         {
