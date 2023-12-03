@@ -1,26 +1,31 @@
 /* Add your CSS styling here */
 .jeopardy-board {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
-    margin: 20px;
-    background: #f3f3f3;
-  }
-  
-  .jeopardy-category {
-    border: 1px solid #000;
-    padding: 10px;
-    text-align: center;
-    background-color: #f0f0f0;
-  }
-  
-  .jeopardy-question {
-    border: 1px solid #000;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    background-color: #e0e0e0;
-  }
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  margin: 20px;
+  background: #f3f3f3;
+}
+
+.jeopardy-category {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.jeopardy-question {
+  border: 1px solid #000;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #060CE9; /* Change box color */
+  color: white; /* Set font color to white */
+  font-family: Arial, sans-serif; /* Use Arial font */
+  font-weight: bold; /* Set font weight to bold */
+  font-size: 16px; /* Adjust font size if needed */
+  line-height: 1.5; /* Adjust line height if needed */
+}
 
 .modal {
   display: flex;
