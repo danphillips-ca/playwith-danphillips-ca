@@ -56,7 +56,7 @@
       "questions": [
         {
           "value": 200,
-          "question": "This is the family that was featured in the 1989 holiday classic, <i>National Lampoon's Christmas Vacation</i>.",
+          "question": "This family was featured in the 1989 holiday classic, <i>National Lampoon's Christmas Vacation</i>.",
           "answer": "Who are the Griswolds?"
         },
         {
@@ -82,12 +82,12 @@
         {
           "value": 200,
           "question": "This is the first ghost to appear in A Christmas Carol.",
-          "answer": "Who is Jacob Marley."
+          "answer": "Who is Jacob Marley?"
         },
         {
           "value": 400,
           "question": "Kevin McAllister feared this kindly neighbour, rumoured to be the 'South Bend Shovel Slayer' in Home Alone.",
-          "answer": "'Old Man' Marley?"
+          "answer": "Who is Old Man Marley?"
         },
         {
           "value": 600,
