@@ -38,18 +38,38 @@ function displayJeopardyBoard(categories) {
   });
 }
 
-function showQuestionModal(question) {
+function showQuestionModal(question, answer) {
   const modal = document.createElement('div');
   modal.className = 'modal';
   modal.innerHTML = `
     <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
       <h2>Question</h2>
-      <p>${question}</p>
+      <p class="question">${question}</p>
     </div>
   `;
   document.body.appendChild(modal);
   document.body.style.overflow = 'hidden'; // Disable scrolling when modal is open
+
+  modal.addEventListener('click', function () {
+    showAnswerModal(answer);
+  });
+}
+
+function showAnswerModal(answer) {
+  const modal = document.createElement('div');
+  modal.className = 'modal';
+  modal.innerHTML = `
+    <div class="modal-content">
+      <h2>Answer</h2>
+      <p class="answer">${answer}</p>
+    </div>
+  `;
+  document.body.appendChild(modal);
+  document.body.style.overflow = 'hidden'; // Disable scrolling when modal is open
+
+  modal.addEventListener('click', function () {
+    closeModal();
+  });
 }
 
 function closeModal() {
