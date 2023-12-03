@@ -13,6 +13,16 @@
           "question": "He was the first President of the United States.",
           "answer": "Who is George Washington?"
         },
+        {
+          "value": 600,
+          "question": "Placeholder.",
+          "answer": "Placeholder Result?"
+        },
+        {
+          "value": 800,
+          "question": "This war, also known as the Great War, ended in 1918.",
+          "answer": "What is World War I?"
+        }
       ]
     },
     {
@@ -28,7 +38,17 @@
           "question": "This famous scientist developed the theory of general relativity.",
           "answer": "Who is Albert Einstein?"
         },
+        {
+          "value": 600,
+          "question": "Placeholder.",
+          "answer": "Placeholder Result?"
+        },
+        {
+          "value": 800,
+          "question": "This war, also known as the Great War, ended in 1918.",
+          "answer": "What is World War I?"
+        }
       ]
-    },
+    }
   ]
 }
