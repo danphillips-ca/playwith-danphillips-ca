@@ -16,7 +16,8 @@ body {
 
 .jeopardy-category {
   border-top: 4px solid black;
-  border: 2px solid black;
+  border-left: 2px solid black; /* Added left border */
+  border-right: 2px solid black; /* Added right border */
   padding-top: 10px;
   text-align: center;
   font-weight: bold;
@@ -24,7 +25,9 @@ body {
 }
 
 .jeopardy-question {
-  border: 4px solid black;
+  border: 2px solid black; /* Changed border width to 2px */
+  border-left: none; /* Removed left border */
+  border-right: none; /* Removed right border */
   padding: 10px;
   text-align: center;
   cursor: pointer;
