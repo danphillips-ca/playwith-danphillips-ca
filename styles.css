@@ -19,7 +19,6 @@ body {
   border-top: 8px solid black; /* Thicker top border */
   border-left: 6px solid black; /* Thicker left border */
   border-right: 6px solid black; /* Thicker right border */
-  border-bottom: 6px solid black; /* Thicker bottom border */  
   padding-top: 25px; /* Increased padding top */
   padding-bottom: 15px; /* Add space beneath the text */
   margin-bottom: 10px; /* Added margin bottom for space under text */
@@ -34,6 +33,7 @@ body {
   border: 6px solid black; /* Thicker border */
   border-left: none;
   border-right: none;
+  margin-top:20px;
   padding: 20px; /* Increased padding */
   text-align: center;
   cursor: pointer;
