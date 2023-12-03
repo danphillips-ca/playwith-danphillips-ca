@@ -1,38 +1,37 @@
 {
-    "categories": [
-      {
-        "title": "History",
-        "questions": [
-          {
-            "value": 200,
-            "question": "This war, also known as the Great War, ended in 1918.",
-            "answer": "What is World War I?"
-          },
-          {
-            "value": 400,
-            "question": "He was the first President of the United States."
-            "answer": "Who is George Washington?"
-          },
-          // More questions for the "History" category...
-        ]
-      },
-      {
-        "title": "Science",
-        "questions": [
-          {
-            "value": 200,
-            "question": "This fundamental particle has a positive charge.",
-            "answer": "What is a proton?"
-          },
-          {
-            "value": 400,
-            "question": "This famous scientist developed the theory of general relativity.",
-            "answer": "Who is Albert Einstein?"
-          },
-          // More questions for the "Science" category...
-        ]
-      },
-      // More categories...
-    ]
-  }
-  
+  "categories": [
+    {
+      "title": "History",
+      "questions": [
+        {
+          "value": 200,
+          "question": "This war, also known as the Great War, ended in 1918.",
+          "answer": "What is World War I?"
+        },
+        {
+          "value": 400,
+          "question": "He was the first President of the United States.",
+          "answer": "Who is George Washington?"
+        },
+        // More questions for the "History" category...
+      ]
+    },
+    {
+      "title": "Science",
+      "questions": [
+        {
+          "value": 200,
+          "question": "This fundamental particle has a positive charge.",
+          "answer": "What is a proton?"
+        },
+        {
+          "value": 400,
+          "question": "This famous scientist developed the theory of general relativity.",
+          "answer": "Who is Albert Einstein?"
+        },
+        // More questions for the "Science" category...
+      ]
+    },
+    // More categories...
+  ]
+}
