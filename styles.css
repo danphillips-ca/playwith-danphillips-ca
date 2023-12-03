@@ -37,8 +37,8 @@ body {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
-  width: 90%; /* Set the width to 90% of the viewport */
-  height: 90%; /* Set the height to 90% of the viewport */
+  width: 90vw; /* Set the width to 90% of the viewport width */
+  height: 90vh; /* Set the height to 90% of the viewport height */
   max-width: 800px; /* Set a maximum width to maintain readability */
   max-height: 600px; /* Set a maximum height to maintain readability */
   overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
