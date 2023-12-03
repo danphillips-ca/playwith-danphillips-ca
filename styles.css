@@ -71,6 +71,7 @@
   max-height: 80%;
   overflow-y: auto;
   text-align: center;
+  font-size: 24px; /* Set the font size for the question and answer */
 }
 
 .close {
