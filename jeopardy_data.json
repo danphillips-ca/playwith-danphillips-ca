@@ -66,8 +66,8 @@
         },
         {
           "value": 600,
-          "question": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/sFJAk89t4kA' title='Prompt' frameborder='0'></iframe>'",
-          "answer": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/7ea__mxmezQ' title='Result' frameborder='0'></iframe>'"
+          "question": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/sFJAk89t4kA' title='Prompt' frameborder='0'></iframe>",
+          "answer": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/7ea__mxmezQ' title='Result' frameborder='0'></iframe>"
         },
         {
           "value": 800,
@@ -86,7 +86,7 @@
         },
         {
           "value": 400,
-          "question": "Kevin McAllister feared this kindly neighbour, rumoured to be the 'South Bend Shovel Slayer' in Home Alone.",
+          "question": "Kevin McAllister feared this kindly neighbour, rumoured to be the 'South Bend Shovel Slayer' in Home Alone.<br> <img style='border: 2px solid #363636; width:300px; margin:15px' src='https://lh3.googleusercontent.com/pw/ADCreHcLGtLsqTw_jXNKvA6xNl8Wln3GQkXM4JWPZATsCL77uzfkDzXbNJR1334isWnx7rtu-Gg2DL-yR_POj5wFa14JPC4Aqmg_5lpWnU7zAKPR64GsXPEi79m7DSHTra7mVlgQs8ackwxYsNn0ZbkjIGzMdQ'>",
           "answer": "Who is Old Man Marley?"
         },
         {
@@ -96,7 +96,7 @@
         },
         {
           "value": 800,
-          "question": "The actress seen here is wishing us a Happy Hanukkah in American Sign Language.<br> <img style='border: 2px solid #363636; width:300px; padding:15px' src='https://lh3.googleusercontent.com/pw/ADCreHdtlLaPNFjMnAH9Hf8_cKhZSzcmlAwpiMYOY_YsNAcjfgmsP17wy265R-tak7fqihcZv7loKg606_DEdTu2scxRBo2bzAt4Y3wrGMbgu7yfH6U8Hc32fOBUyXIkNBoy5WnT4h7j0r3fxMQVO7EkGY8Wcw' alt='An attractive woman says Happy Hanukkah in ASL. She eats a cookie.'>",
+          "question": "The actress seen here is wishing us a Happy Hanukkah in American Sign Language.<br> <img style='border: 2px solid #363636; width:300px; margin:15px' src='https://lh3.googleusercontent.com/pw/ADCreHdtlLaPNFjMnAH9Hf8_cKhZSzcmlAwpiMYOY_YsNAcjfgmsP17wy265R-tak7fqihcZv7loKg606_DEdTu2scxRBo2bzAt4Y3wrGMbgu7yfH6U8Hc32fOBUyXIkNBoy5WnT4h7j0r3fxMQVO7EkGY8Wcw' alt='An attractive woman says Happy Hanukkah in ASL. She eats a cookie.'>",
           "answer": "Who is Marlee Matlin?"
         }
       ]
