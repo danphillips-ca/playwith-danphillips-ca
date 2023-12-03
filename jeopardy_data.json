@@ -12,7 +12,7 @@
         {
           "value": 400,
           "question": "Each year, this American city receives a Christmas Tree in thanks for support provided after the Halifax Explosion.",
-          "answer": "Where is Boston?"
+          "answer": "What is Boston?"
         },
         {
           "value": 600,
@@ -27,37 +27,37 @@
       ]
     },
     {
-      "title": "Four Marleys Mocking",
+      "title": "Placeholder Category 1",
       "questions": [
         {
           "value": 200,
-          "question": "This is the first ghost to appear in A Christmas Carol.",
-          "answer": "Who is Jacob Marley."
+          "question": "Placeholder Question.",
+          "answer": "Placeholder Answer."
         },
         {
           "value": 400,
-          "question": "This lead singer of the band The Wailers died at the Cedars Of Lebanon Hospital on May 11, 1981.",
-          "answer": "Who is Bob Marley?"
+          "question": "Placeholder Question2.",
+          "answer": "Placeholder Answer2."
         },
         {
           "value": 600,
-          "question": "This film featuring Owen Wilson and Jennifer Aniston was released on Christmas Day, 2008.",
-          "answer": "What is Marley and Me?"
+          "question": "Placeholder Question3.",
+          "answer": "Placeholder Answer3."
         },
         {
           "value": 800,
-          "question": "This actress can be seen here wishing a Happy Hanukkah in American Sign Language in this video: </br> <iframe src='https://twitter.com/hashtag/HappyHanukkah?src=hash&amp;ref_src=twsrc%5Etfw' height='200' width='300' title='Embedded tweet of (redacted) saying Happy HappyHanukkah in ASL.'></iframe>",
-          "answer": "Who is Marlee Matlin?"
+          "question": "Placeholder Question4.",
+          "answer": "Placeholder Answer4."
         }
       ]
     },
     {
-      "title": "Four Marleys Mocking",
+      "title": "Category Placeholder 2",
       "questions": [
         {
           "value": 200,
-          "question": "This is the first ghost to appear in A Christmas Carol.",
-          "answer": "Who is Jacob Marley."
+          "question": "Placeholder Question.",
+          "answer": "Placeholder Answer."
         },
         {
           "value": 400,
@@ -71,8 +71,8 @@
         },
         {
           "value": 800,
-          "question": "This actress can be seen here wishing a Happy Hanukkah in American Sign Language in this video: </br> <iframe src='https://twitter.com/hashtag/HappyHanukkah?src=hash&amp;ref_src=twsrc%5Etfw' height='200' width='300' title='Embedded tweet of (redacted) saying Happy HappyHanukkah in ASL.'></iframe>",
-          "answer": "Who is Marlee Matlin?"
+          "question": "Placeholder Question4.",
+          "answer": "Placeholder Answer4."
         }
       ]
     },
