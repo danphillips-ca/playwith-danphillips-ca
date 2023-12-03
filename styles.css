@@ -45,6 +45,10 @@ body {
   background-color: #0055AA;
 }
 
+.question-selected {
+  color: #ffccff !important;  
+}
+
 .modal-content {
   background-color: #fff;
   padding: 20px;
