@@ -29,7 +29,8 @@ body {
   text-align: center;
   cursor: pointer;
   font-weight: bold;
-  color: yellow;
+  color: #ffcc00;
+  text-shadow: 1px 1px 2px black;
   background-color: #0055AA;
 }
 
