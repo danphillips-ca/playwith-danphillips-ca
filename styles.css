@@ -15,11 +15,8 @@ body {
 }
 
 .jeopardy-category {
-  border: 2px solid #fff;
-  padding: 10px;
   text-align: center;
   font-weight: bold;
-  background-color: #0088FF;
 }
 
 .jeopardy-question {
