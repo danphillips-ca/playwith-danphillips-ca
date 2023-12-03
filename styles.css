@@ -64,7 +64,6 @@ body {
   transform: translate(-50%, -50%); /* Center horizontally and vertically */
   z-index: 9999; /* Set a higher z-index to ensure it appears above other elements */
   vertical-align: middle;
-  height: 100%;
 
 }
 
