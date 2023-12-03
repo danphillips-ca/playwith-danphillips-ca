@@ -65,6 +65,12 @@ body {
   z-index: 9999; /* Set a higher z-index to ensure it appears above other elements */
 }
 
+.question, .answer {
+  font-size: 34px; /* Increase the font size */
+  text-align: center; /* Center the text */
+  vertical-align: middle;
+}
+
 footer {
   background-color: #d6d6d6;
   color: #363636;
