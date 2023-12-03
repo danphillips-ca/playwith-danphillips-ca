@@ -66,8 +66,8 @@
         },
         {
           "value": 600,
-          "question": "<iframe width='560' height='315' src='https://photos.app.goo.gl/T51wqDtzhu9GMTKi9' frameborder="0" allowfullscreen></iframe>",
-          "answer": "Placeholder Answer3."
+          "question": "<iframe width='560' height='315' src='https://photos.app.goo.gl/T51wqDtzhu9GMTKi9' frameborder='0' allowfullscreen></iframe>",
+          "answer": "<iframe width='560' height='315' src='https://photos.app.goo.gl/RhHJHyEeX7EAA9yh7' frameborder='0' allowfullscreen"
         },
         {
           "value": 800,
