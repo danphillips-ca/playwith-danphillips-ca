@@ -1,4 +1,5 @@
 /* Add your CSS styling here */
+/* Add your CSS styling here */
 .jeopardy-board {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -23,9 +24,18 @@
   color: white; /* Set font color to white */
   font-family: Arial, sans-serif; /* Use Arial font */
   font-weight: bold; /* Set font weight to bold */
-  font-size: 16px; /* Adjust font size if needed */
-  line-height: 1.5; /* Adjust line height if needed */
+  width: calc(33.333% - 20px); /* Adjust width based on grid columns and gap */
+  padding-top: calc((33.333% - 20px) * 0.75); /* Set height to achieve 4:3 aspect ratio */
+  position: relative;
+  overflow: hidden;
 }
+
+.jeopardy-question:before {
+  content: '';
+  display: block;
+  padding-top: 75%; /* Maintain 4:3 aspect ratio (75% = 3/4) */
+}
+
 
 .modal {
   display: flex;
