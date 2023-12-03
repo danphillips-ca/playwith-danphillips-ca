@@ -34,7 +34,6 @@
   padding-top: 133.333%; /* Maintain 3:4 aspect ratio (133.333% = 4/3) */
 }
 
-/* Styling for dollar values */
 .jeopardy-dollars {
   border: 1px solid #000;
   padding: 10px;
@@ -44,7 +43,10 @@
   color: black; /* Set font color to black */
   font-family: 'Arial', 'Helvetica', sans-serif; /* Use Arial or Helvetica as a close match */
   font-weight: bold; /* Set font weight to bold */
+  width: 120px; /* Set width */
+  height: 90px; /* Set height to create square boxes */
 }
+
 
 
 
