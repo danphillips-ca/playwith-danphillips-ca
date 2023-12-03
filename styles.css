@@ -82,6 +82,7 @@ body {
   display: flex; /* Use flexbox */
   align-items: center; /* Vertically center the content */
   justify-content: center; /* Horizontally center the content */
+  flex-direction: column; /* Stack elements in a column */
 }
 
 footer {
