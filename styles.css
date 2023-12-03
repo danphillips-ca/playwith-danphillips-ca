@@ -64,8 +64,12 @@ body {
   transform: translate(-50%, -50%); /* Center horizontally and vertically */
   z-index: 9999; /* Set a higher z-index to ensure it appears above other elements */
   vertical-align: middle;
-
 }
+
+.modal-content h2 {
+  color: #d3d3d3;
+}
+
 
 .question, .answer {
   font-size: 34px; /* Increase the font size */
