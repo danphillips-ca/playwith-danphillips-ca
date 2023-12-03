@@ -47,7 +47,7 @@ function showQuestionModal(question, answer) {
   modal.className = 'modal';
   modal.innerHTML = `
     <div class="modal-content">
-      <h2>Question</h2>
+      <h2>Answer</h2>
       <p class="question">${question}</p>
     </div>
   `;
@@ -71,7 +71,7 @@ function showAnswerModal(answer) {
   modal.className = 'modal';
   modal.innerHTML = `
     <div class="modal-content">
-      <h2>Answer</h2>
+      <h2>Question</h2>
       <p class="answer">${answer}</p>
     </div>
   `;
