@@ -138,4 +138,7 @@ footer a {
 footer a:hover {
   text-decoration: underline;
 }
+.content {
+  padding-bottom: 80px; /* Adjust this value according to your footer's height */
+}
 /*END FOOTER FORMATTING*/
