@@ -81,6 +81,47 @@ function showAnswerModal(answer) {
     questionModal = null;
   }
 
+  // Fetch the usernames from the JSON file
+  fetch('scoreboards/users.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(users => {
+      const modal = document.createElement('div');
+      modal.className = 'modal';
+      modal.innerHTML = `
+        <div class="modal-content">
+          <h2>Question</h2>
+          <p class="answer">${answer}</p>
+          <div class="user-buttons"></div>
+        </div>
+      `;
+      document.body.appendChild(modal);
+      document.body.style.overflow = 'hidden';
+
+      // Create buttons for each user
+      const userButtonsDiv = modal.querySelector('.user-buttons');
+      users.slice(0, 3).forEach(user => {
+        const button = document.createElement('button');
+        button.textContent = user.username;
+        button.className = 'user-button';
+        button.addEventListener('click', () => handleUserSelection(user.username, answer));
+        userButtonsDiv.appendChild(button);
+      });
+    })
+    .catch(error => {
+      console.error('There was a problem fetching the usernames:', error);
+      // Handle error loading usernames
+    });
+
+  modal.addEventListener('click', function () {
+    closeModal();
+  });
+}
+
   const modal = document.createElement('div');
   modal.className = 'modal';
   modal.innerHTML = `
