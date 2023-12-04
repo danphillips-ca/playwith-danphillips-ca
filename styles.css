@@ -85,6 +85,30 @@ body {
   flex-direction: column; /* Stack elements in a column */
 }
 
+/*SCOREBOARD FORMATTING*/
+.score-column {
+  float: left;
+  width: calc(100% / 3);
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  color: #363636;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.score-column p {
+  margin: 5px 0;
+}
+.score-column strong {
+  font-weight: bold;
+}
+/*END SCOREBOARD FORMATTING*/
+
+
+/*FOOTER FORMATTING*/
 footer {
   background-color: #d6d6d6;
   color: #363636;
@@ -96,14 +120,13 @@ footer {
   bottom: 0; /* Stick to the bottom */
   width: 100%; /* Occupy full width */
 }
-
 footer a {
   font-weight: bold;
   text-decoration: none;
   transition: text-decoration 0.3s ease-in-out;
   color: #363636;
 }
-
 footer a:hover {
   text-decoration: underline;
 }
+/*END FOOTER FORMATTING*/
