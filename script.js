@@ -5,11 +5,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Function to open question modal
   function openQuestionModal(category, value, question, questionMedia) {
-    // Close the answer modal if it's open
-    if (answerModal.style.display === 'block') {
-      answerModal.style.display = 'none';
-    }
-
     // Set the question modal content
     document.getElementById('questionHeader').innerText = `${category} - $${value}`;
     document.getElementById('question').innerText = question;
@@ -17,13 +12,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Display the question modal
     questionModal.style.display = 'block';
+
+    // Example event listener for an answer button click in the question modal
+    const showAnswerButton = document.getElementById('showAnswerButton');
+    showAnswerButton.addEventListener('click', function () {
+      const answer = document.getElementById('answer').innerText; // Gets the answer content from the answer modal
+      const answerMedia = document.getElementById('answerMedia').innerHTML; // Gets the answer media from the answer modal
+
+      // Now you can use these retrieved values as needed
+      console.log("Category:", category);
+      console.log("Value:", value);
+      console.log("Answer:", answer);
+      console.log("Answer Media:", answerMedia);
+
+      // Call the function to open the answer modal
+      openAnswerModal(category, value, answer, answerMedia);
+    });
   }
 
   // Function to open answer modal
   function openAnswerModal(category, value, answer, answerMedia) {
-    // Close the question modal
-    questionModal.style.display = 'none';
-
     // Set the answer modal content
     document.getElementById('answerHeader').innerText = `${category} - $${value}`;
     document.getElementById('answer').innerText = answer;
@@ -44,27 +52,9 @@ document.addEventListener('DOMContentLoaded', function () {
       const value = parseInt(this.dataset.value);
       const question = this.dataset.question;
       const questionMedia = this.dataset.questionMedia;
-      
+
       openQuestionModal(category, value, question, questionMedia);
     });
   });
 
-// Example event listener for an answer button click in the question modal
-const showAnswerButton = document.getElementById('showAnswerButton');
-showAnswerButton.addEventListener('click', function () {
-  const category = document.getElementById('questionHeader').innerText.split(' - ')[0]; // Extracts category from the question modal header
-  const value = parseInt(document.getElementById('questionHeader').innerText.split(' - ')[1].replace('$', '')); // Extracts value from the question modal header
-  const answer = document.getElementById('answer').innerText; // Gets the answer content from the answer modal
-  const answerMedia = document.getElementById('answerMedia').innerHTML; // Gets the answer media from the answer modal
-
-  // Now you can use these retrieved values as needed
-  console.log("Category:", category);
-  console.log("Value:", value);
-  console.log("Answer:", answer);
-  console.log("Answer Media:", answerMedia);
-});
-
-    
-    openAnswerModal(category, value, answer, answerMedia);
-  });
 });
