@@ -1,42 +1,24 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Trivia Game</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Jeopardy Trivia Game</title>
 </head>
 <body>
-
-<table id="jeopardyTable">
-  <thead>
-    <tr>
-      <!-- Category titles will be populated here -->
-    </tr>
-  </thead>
-  <tbody>
-    <!-- Dollar values and cells will be populated here -->
-  </tbody>
-</table>
-
-<!-- Modals for questions and answers -->
-<div id="questionModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2 id="questionHeader"></h2>
-    <p id="question"></p>
-    <div id="questionMedia"></div>
+  <div class="board">
+    <div class="categories"></div>
+    <div class="questions"></div>
   </div>
-</div>
 
-<div id="answerModal" class="modal">
+  <!-- Modal for displaying questions and answers -->
   <div class="modal-content">
-    <span class="close">&times;</span>
-    <h2 id="answerHeader"></h2>
-    <p id="answer"></p>
-    <div id="answerMedia"></div>
+    <div class="modal-header">
+      <span class="modal-close">&times;</span>
+      <h2 class="modal-title"></h2>
+    </div>
+    <div class="modal-body">
+      <p class="question-text"></p>
+      <div class="question-media"></div>
+      <p class="answer-text"></p>
+      <div class="answer-media"></div>
+    </div>
   </div>
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
