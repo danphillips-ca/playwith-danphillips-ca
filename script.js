@@ -1,76 +1,62 @@
-// Fetching and processing JSON data
-fetch('gamedata/gamedata.json')
-  .then(response => response.json())
-  .then(data => {
-    const jeopardyTable = document.getElementById('jeopardyTable');
-    const categoriesRow = jeopardyTable.querySelector('thead tr');
-    const body = jeopardyTable.querySelector('tbody');
-
-    // Populate category titles in the top row
-    data.categories.forEach(category => {
-      categoriesRow.innerHTML += `<th>${category.title}</th>`;
-    });
-
-    // Create rows for dollar values and cells
-    const maxQuestions = Math.max(...data.categories.map(category => category.questions.length));
-    for (let i = 0; i < maxQuestions; i++) {
-      const row = document.createElement('tr');
-      data.categories.forEach(category => {
-        const questions = category.questions;
-        if (questions[i]) {
-          const question = questions[i];
-          const cell = document.createElement('td');
-          cell.textContent = `$${question.value}`;
-          cell.addEventListener('click', () => openQuestionModal(category.title, question));
-          row.appendChild(cell);
-        } else {
-          row.innerHTML += '<td></td>';
-        }
-      });
-      body.appendChild(row);
-    }
-  })
-  .catch(error => console.error('Error fetching data:', error));
-
-// Function to open question modal
-function openQuestionModal(category, question) {
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the modal elements
   const questionModal = document.getElementById('questionModal');
-  const questionHeader = document.getElementById('questionHeader');
-  const questionContent = document.getElementById('question');
-  const questionMedia = document.getElementById('questionMedia');
-
-  questionHeader.textContent = `${category} - $${question.value}`;
-  questionContent.textContent = question.question;
-  questionMedia.innerHTML = question['question-media'] || '';
-
-  questionModal.style.display = 'block';
-
-  // Event listener to open answer modal when question modal is clicked
-  questionModal.addEventListener('click', () => openAnswerModal(category, question), { once: true });
-
-  // Close the modal when clicking the close button
-  const closeModal = questionModal.querySelector('.close');
-  closeModal.addEventListener('click', () => {
-    questionModal.style.display = 'none';
-  });
-}
-
-// Function to open answer modal
-function openAnswerModal(category, question) {
   const answerModal = document.getElementById('answerModal');
-  const answerHeader = document.getElementById('answerHeader');
-  const answerContent = document.getElementById('answer');
-  const answerMedia = document.getElementById('answerMedia');
 
-  answerHeader.textContent = `${category} - $${question.value}`;
-  answerContent.textContent = question.answer;
-  answerMedia.innerHTML = question['answer-media'] || '';
+  // Function to open question modal
+  function openQuestionModal(category, value, question, questionMedia) {
+    // Close the answer modal if it's open
+    if (answerModal.style.display === 'block') {
+      answerModal.style.display = 'none';
+    }
 
-  answerModal.style.display = 'block';
+    // Set the question modal content
+    document.getElementById('questionHeader').innerText = `${category} - $${value}`;
+    document.getElementById('question').innerText = question;
+    document.getElementById('questionMedia').innerHTML = questionMedia;
 
-  // Close the modal when clicking the close button
-  const closeModal = answerModal.querySelector('.close');
-  closeModal.addEventListener('click', () => {
-    answerModal.style.display = 'none';
+    // Display the question modal
+    questionModal.style.display = 'block';
+  }
+
+  // Function to open answer modal
+  function openAnswerModal(category, value, answer, answerMedia) {
+    // Close the question modal
+    questionModal.style.display = 'none';
+
+    // Set the answer modal content
+    document.getElementById('answerHeader').innerText = `${category} - $${value}`;
+    document.getElementById('answer').innerText = answer;
+    document.getElementById('answerMedia').innerHTML = answerMedia;
+
+    // Display the answer modal
+    answerModal.style.display = 'block';
+  }
+
+  // Add event listeners or triggers for opening modals
+  // For example, you can add event listeners to table cells or buttons
+
+  // Example event listener for a table cell click
+  const tableCells = document.querySelectorAll('#jeopardyTable tbody td');
+  tableCells.forEach(cell => {
+    cell.addEventListener('click', function () {
+      const category = this.dataset.category;
+      const value = parseInt(this.dataset.value);
+      const question = this.dataset.question;
+      const questionMedia = this.dataset.questionMedia;
+      
+      openQuestionModal(category, value, question, questionMedia);
+    });
   });
-}
+
+  // Example event listener for an answer button click in the question modal
+  const showAnswerButton = document.getElementById('showAnswerButton');
+  showAnswerButton.addEventListener('click', function () {
+    const category = /* Get category */;
+    const value = /* Get value */;
+    const answer = /* Get answer */;
+    const answerMedia = /* Get answer media */;
+    
+    openAnswerModal(category, value, answer, answerMedia);
+  });
+});
