@@ -87,7 +87,7 @@ body {
 }
 
 /*SCOREBOARD FORMATTING*/
-.scoreboard-banner {
+#scoreboard {
   margin: 20px;
   background: grey;
 }
