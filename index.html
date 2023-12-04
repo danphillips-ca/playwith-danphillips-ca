@@ -28,6 +28,37 @@
       width: 33.33%;
       padding: 10px;
     }
+
+body {
+  color: #363636;
+}
+
+h2 {
+  color: #363636;
+}
+
+.column {
+  float: left;
+  width: calc(100% / 3);
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Clear floats after columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style for user details */
+.column p {
+  margin: 5px 0;
+}
+.column strong {
+  font-weight: bold;
+}
   </style>
     <h2 style="color: #363636;">User Scores</h2>
   <div class="column" id="column1"></div>
