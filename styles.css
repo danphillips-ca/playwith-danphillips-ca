@@ -1,52 +1,44 @@
-/* Basic styles for the game */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
 .board {
   display: flex;
-  flex-direction: row;
-  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.categories,
-.questions {
-  flex: 1;
-  border-right: 1px solid #000;
-}
-
-.categories div,
-.questions div {
+.question {
+  width: 150px;
+  height: 100px;
+  border: 2px solid #333;
+  margin: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh / 6);
-  border-bottom: 1px solid #000;
+  cursor: pointer;
 }
 
-.modal {
-  display: none;
-  position: fixed;
-  top: 5%;
-  left: 5%;
-  width: 90%;
-  height: 90%;
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 20px;
-  box-sizing: border-box;
+.question.clicked {
+  background-color: #ddd;
+  pointer-events: none;
 }
-    .modal-content {
-      display: none;
-      position: fixed;
-      top: 5%;
-      left: 5%;
-      width: 90%;
-      height: 90%;
-      background: rgba(0, 0, 0, 0.8);
-      color: white;
-      padding: 20px;
-      box-sizing: border-box;
-    }
