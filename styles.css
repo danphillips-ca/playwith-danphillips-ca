@@ -96,7 +96,6 @@ body {
   box-sizing: border-box;
   padding: 10px;
   text-align: center;
-  color: #0055AA;
   font-size: 28px;
 }
 .row:after {
@@ -109,6 +108,7 @@ body {
   margin: 5px 0;
 }
 .score-column strong {
+  color: #0055AA;
   font-family: Kalam;
   font-weight: bold;
 }
