@@ -87,6 +87,10 @@ body {
 }
 
 /*SCOREBOARD FORMATTING*/
+.scoreboard-banner {
+  margin: 20px;
+  background: grey;
+}
 .score-column {
   float: left;
   width: calc(100% / 3);
