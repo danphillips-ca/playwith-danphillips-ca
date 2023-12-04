@@ -1,7 +1,5 @@
 [
   {"username": "User1", "score": 150},
   {"username": "User2", "score": 200},
-  {"username": "User3", "score": 180},
-  {"username": "User4", "score": 220},
-  {"username": "User5", "score": 190}
+  {"username": "User3", "score": 180}
 ]
