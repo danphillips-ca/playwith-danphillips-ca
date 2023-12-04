@@ -21,10 +21,15 @@ document.addEventListener('DOMContentLoaded', function() {
     .then(jsonData => {
       data = jsonData;
 
-      // Populate category titles
-      data.categories.forEach(category => {
-        categoryTitles.innerHTML += `<div>${category.title}</div>`;
-      });
+      // Check if categoryTitles element exists before populating categories
+      if (categoryTitles) {
+        // Populate category titles
+        data.categories.forEach(category => {
+          categoryTitles.innerHTML += `<div>${category.title}</div>`;
+        });
+      } else {
+        throw new Error('.categories element not found');
+      }
 
       // Populate question values
       data.categories[0].questions.forEach(question => {
@@ -51,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
           modal.style.display = 'block';
         });
       });
+
     })
     .catch(error => {
       console.error('Error fetching or processing data:', error);
