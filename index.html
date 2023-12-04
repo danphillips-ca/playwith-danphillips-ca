@@ -1,46 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Jeopardy Game</title>
+  <meta charset="UTF-8">
+  <title>Trivia Game</title>
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Kalam&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <style>
-    h1 {
-      color:#363636;
-      font-family: 'Allerta', 'Roboto' sans-serif;
-      font-weight: 700;
-      font-size: 36px;
-      text-align: center;
-    }
-  </style>
 </head>
-
 <body>
-  <!--Jeopardy Board-->
-  <div id="gameboard">
-    <h1>Number Two Movie Club Trivia</h1>
-    <div class="jeopardy-board" id="jeopardyBoard"></div>
+
+<table id="jeopardyTable">
+  <thead>
+    <tr>
+      <!-- Category titles will be populated here -->
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Dollar values and cells will be populated here -->
+  </tbody>
+</table>
+
+<!-- Modals for questions and answers -->
+<div id="questionModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="questionHeader"></h2>
+    <p id="question"></p>
+    <div id="questionMedia"></div>
   </div>
+</div>
 
-  <!--Score Board-->
-  <div id="scoreboard">
-    <div class="score-column" id="column1"></div>
-    <div class="score-column" id="column2"></div>
-    <div class="score-column" id="column3"></div>
-    
-    <script src="scoreboard/scoreboard.js"></script>
+<div id="answerModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2 id="answerHeader"></h2>
+    <p id="answer"></p>
+    <div id="answerMedia"></div>
   </div>
+</div>
 
-<!-- Footer placed within the body -->
-  <footer>
-    <a href="https://creativecommons.org/licenses/by-nc/4.0/" rel="nofollow noopener noreferrer"><i class="fab fa-brands fa-creative-commons" aria-hidden="true"></i> BY-NC Dan Phillips</a><br>
-    <a href="https://orcid.org/0000-0002-0386-0132" rel="nofollow noopener noreferrer"><i class="fab fa-brands fa-orcid" aria-hidden="true"></i> 0000-0002-0386-0132</a><br>
-    <span style="font-size:.6875em">Made from scratch by Dan Phillips. Well, with a bit of AI help. 🤎</span>
-  </footer>
-
-  <script src="scripts.js"></script>
+<script src="script.js"></script>
 </body>
-
 </html>
