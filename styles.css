@@ -109,6 +109,8 @@ body {
 }
 .score-column strong {
   color: #0055AA;
+  font-size: 36px;
+  margin: 5px
   font-family: Kalam;
   font-weight: bold;
 }
