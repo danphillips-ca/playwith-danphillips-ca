@@ -1,5 +1,5 @@
 // Fetching data from the JSON file
-fetch('users.json')
+fetch('scoreboard/users.json')
   .then(response => response.json())
   .then(data => {
     // Sort the data by score in descending order
