@@ -2,19 +2,22 @@
 fetch('scoreboard/users.json')
   .then(response => response.json())
   .then(data => {
-    // Sort the data by score in descending order
-    data.sort((a, b) => b.score - a.score);
+    // Sort the data by username alphabetically
+    data.sort((a, b) => a.username.localeCompare(b.username));
 
-    // Extracting the top 3 users
-    const topThreeUsers = data.slice(0, 3);
+    // Displaying the users and their scores in three columns
+    const columns = [document.getElementById('column1'), document.getElementById('column2'), document.getElementById('column3')];
 
-    // Displaying the top 3 users and their scores
-    const userScoresContainer = document.getElementById('userScores');
+    // Distribute users evenly among columns
+    const usersPerColumn = Math.ceil(data.length / columns.length);
 
-    topThreeUsers.forEach(user => {
+    data.forEach((user, index) => {
       const userDiv = document.createElement('div');
-      userDiv.innerHTML = `<p><strong>${user.username}</strong>: ${user.score} points</p>`;
-      userScoresContainer.appendChild(userDiv);
+      userDiv.innerHTML = `<p><strong>${user.username}</strong></p><p>${user.score} points</p>`;
+
+      // Calculate which column to place the user in
+      const columnIndex = Math.floor(index / usersPerColumn);
+      columns[columnIndex].appendChild(userDiv);
     });
   })
   .catch(error => {
