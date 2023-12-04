@@ -108,6 +108,7 @@ body {
   margin: 5px 0;
 }
 .score-column strong {
+  font-family: Kalam;
   font-weight: bold;
 }
 /*END SCOREBOARD FORMATTING*/
