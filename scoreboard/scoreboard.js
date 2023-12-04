@@ -7,7 +7,7 @@ fetch('scoreboard/users.json')
 
     // Displaying the users and their scores in three columns
     const columns = [document.getElementById('column1'), document.getElementById('column2'), document.getElementById('column3')];
-
+    
     // Distribute users evenly among columns
     const usersPerColumn = Math.ceil(data.length / columns.length);
 
