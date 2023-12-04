@@ -6,22 +6,30 @@
         {
           "value": 200,
           "question": "This tree has haunted shoppers of Mic Mac Mall in Dartmouth since 1983.",
-          "answer": "Who is Woody the Christmas Tree?<br> <img style='border: 2px solid #363636; width:300px; margin:15px' src='https://lh3.googleusercontent.com/pw/ADCreHcjlKCXpI7sk5NrDp2JODpsWAQoEcoY_0M-h3qRiQPN2TnpRbfPbWm8mxpaZq-4d3IAlxtg6E57Gkq6b_kaJnF9ATPn5IzSvBTgYT1mzjeND_YXtizZ-B9cpYRLxAxtTt6a-dYRDgrE0QhP9Pgy7KiQnA=w500-h500-s-no-gm' alt='An abomination wishes you Merry Christmas.'>"
+          "question-media": "",
+          "answer": "Who is Woody the Christmas Tree?",
+          "answer-media": "<img style='border: 2px solid #363636; width:300px; margin:15px' src='https://lh3.googleusercontent.com/pw/ADCreHcjlKCXpI7sk5NrDp2JODpsWAQoEcoY_0M-h3qRiQPN2TnpRbfPbWm8mxpaZq-4d3IAlxtg6E57Gkq6b_kaJnF9ATPn5IzSvBTgYT1mzjeND_YXtizZ-B9cpYRLxAxtTt6a-dYRDgrE0QhP9Pgy7KiQnA=w500-h500-s-no-gm' alt='An abomination wishes you Merry Christmas.'>",
         },
         {
           "value": 400,
           "question": "Each year, this American city receives a Christmas Tree in thanks for support provided after the Halifax Explosion.",
-          "answer": "What is Boston?"
+          "question-media": "",
+          "answer": "What is Boston?",
+          "answer-media": ""
         },
         {
           "value": 600,
           "question": "This county claims fame as the Balsam Fir Christmas Tree Capital of the World.",
-          "answer": "What is Lunenburg County?"
+          "question-media": "",
+          "answer": "What is Lunenburg County?",
+          "answer-media": ""
         },
         {
           "value": 800,
           "question": "In the heart of Cape Breton, this island is home to just 300 residents. Yet it receives thousands of seasonal packages each year.",
-          "answer": "Where is Christmas Island?"
+          "question-media": "",
+          "answer": "Where is Christmas Island?",
+          "answer-media": ""
         }
       ]
     },
@@ -31,22 +39,30 @@
         {
           "value": 200,
           "question": "Despite being friends with the 'nerdy' Dilton Doiley, this student of Riverdale High is often at risk of being removed from the football team due to his low grades (recently attributed to dyslexia).<br> <img style='border: 2px solid #363636; width:300px; margin:15px' src='https://lh3.googleusercontent.com/pw/ADCreHeIQAHtndO4RautD0zR5OitehYpaB5GmT7ezlzDOJvc7WctalgA5FIyV4Yq72b6oWyCltOwPw7oFyAICuXU3UzSsdGGd0Z_lsF4DMkOzbR-WnvnSO8qa5y04Xw9DSLKHwGr38c9WCB0K4CTyEhAq_IWDw=w500-h500-s-no-gm' alt='A football player from Riverdale High.'>",
-          "answer": "Who is Marmaduke 'Moose' Mason?"
+          "question-media": "",
+          "answer": "Who is Marmaduke 'Moose' Mason?",
+          "answer-media": ""
         },
         {
           "value": 400,
           "question": "The loudest of the deer family, one of these can be heard making it's <i>bugle</i> in this audio clip.<br><br><audio controls><source src='/gamedata/media/Reindeer Trivia Question.mp3' type='audio/mpeg'>Your browser does not support the audio element.</audio>",
-          "answer": "What is an Elk?"
+          "question-media": "",
+          "answer": "What is an Elk?",
+          "answer-media": ""
         },
         {
           "value": 600,
           "question": "In North America we use this name for wild Reindeer, but both are actually the same species. It's latin name is <i>Rangifer tarandus.</i>",
-          "answer": "What is a Caribou?"
+          "question-media": "",
+          "answer": "What is a Caribou?",
+          "answer-media": ""
         },
         {
           "value": 800,
-          "question": "This horned beast travels with Santa to strike naughty children with birch sticks.<br> <img style='border: 2px solid #363636; width:300px; margin:15px' src='https://lh3.googleusercontent.com/pw/ADCreHc1lGeT2ZPxXXCxaZgatXm8Hk-Oce3GZWc-gThBiwwWV82cSUY2t-ssED0uWDtrVrEAcBAFam3IYINu9x-nZvSGJNB-UDvFGB3Da3aV_9unpoJwWlSrPe_Q6IKEdN9G118SEAVDKBxByum9AW4TUJZKcw' alt='A horned beast holds a pitchfork.'>",
-          "answer": "Who is Krampus?"
+          "question": "This horned beast travels with Santa to strike naughty children with birch sticks.",
+          "question-media": "<img style='border: 2px solid #363636; width:300px; margin:15px' src='https://lh3.googleusercontent.com/pw/ADCreHc1lGeT2ZPxXXCxaZgatXm8Hk-Oce3GZWc-gThBiwwWV82cSUY2t-ssED0uWDtrVrEAcBAFam3IYINu9x-nZvSGJNB-UDvFGB3Da3aV_9unpoJwWlSrPe_Q6IKEdN9G118SEAVDKBxByum9AW4TUJZKcw' alt='A horned beast holds a pitchfork.'>",
+          "answer": "Who is Krampus?",
+          "answer-media": ""
         }
       ]
     },
@@ -56,22 +72,30 @@
         {
           "value": 200,
           "question": "This family was featured in the 1989 holiday classic, <i>National Lampoon's Christmas Vacation.</i>",
-          "answer": "Who are the Griswolds?"
+          "question-media": "",
+          "answer": "Who are the Griswolds?",
+          "answer-media": ""
         },
         {
           "value": 400,
           "question": "This angel appears to George Bailey as he prepares to jump off a bridge in <i>It's A Wonderful Life.</i>",
-          "answer": "Who is Clarence Odbody?"
+          "question-media": "",
+          "answer": "Who is Clarence Odbody?",
+          "answer-media": ""
         },
         {
           "value": 600,
           "question": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/sFJAk89t4kA' title='Prompt' frameborder='0'></iframe>",
-          "answer": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/7ea__mxmezQ' title='Result' frameborder='0'></iframe>"
+          "question-media": "",
+          "answer": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/7ea__mxmezQ' title='Result' frameborder='0'></iframe>",
+          "answer-media": ""
         },
         {
           "value": 800,
           "question": "In the 1965 Christmas Special, Linus van Pelt says this about the snowflake that he catches on his tongue.",
-          "answer": "'Needs Sugar!'<br> <img style='border: 2px solid #363636; width:300px; margin:15px' src='https://lh3.googleusercontent.com/pw/ADCreHdxvMRhiSNC5DhxzKI-PvyXLhY5oDPrMKVqiB_1Mvmwd7DaBj-PX_EF7v8Y-wlWPXr9XV824fLF-swxXK4Wf74QOA4iHOy05VF8lhZTmn55XzsCQJnNUSDyxIbnIagJDbhbHrSs28FRd8WwkcR5ryonvQ=w500-h500-s-no-gm' alt='Linus catches snowflakes on his tongue.'>"
+          "question-media": "",
+          "answer": "'Needs Sugar!'",
+          "answer-media": "<img style='border: 2px solid #363636; width:300px; margin:15px' src='https://lh3.googleusercontent.com/pw/ADCreHdxvMRhiSNC5DhxzKI-PvyXLhY5oDPrMKVqiB_1Mvmwd7DaBj-PX_EF7v8Y-wlWPXr9XV824fLF-swxXK4Wf74QOA4iHOy05VF8lhZTmn55XzsCQJnNUSDyxIbnIagJDbhbHrSs28FRd8WwkcR5ryonvQ=w500-h500-s-no-gm' alt='Linus catches snowflakes on his tongue.'>"
         }
       ]
     },
@@ -81,22 +105,30 @@
         {
           "value": 200,
           "question": "This is the first ghost to appear in A Christmas Carol.",
-          "answer": "Who is Jacob Marley?"
+          "question-media": "",
+          "answer": "Who is Jacob Marley?",
+          "answer-media": ""
         },
         {
           "value": 400,
-          "question": "Kevin McAllister feared this kindly neighbour, rumoured to be the 'South Bend Shovel Slayer' in Home Alone.<br> <img style='border: 2px solid #363636; width:300px; margin:15px' src='https://lh3.googleusercontent.com/pw/ADCreHcLGtLsqTw_jXNKvA6xNl8Wln3GQkXM4JWPZATsCL77uzfkDzXbNJR1334isWnx7rtu-Gg2DL-yR_POj5wFa14JPC4Aqmg_5lpWnU7zAKPR64GsXPEi79m7DSHTra7mVlgQs8ackwxYsNn0ZbkjIGzMdQ'>",
-          "answer": "Who is Old Man Marley?"
+          "question": "Kevin McAllister feared this kindly neighbour, rumoured to be the 'South Bend Shovel Slayer' in Home Alone.",
+          "question-media": "<img style='border: 2px solid #363636; width:300px; margin:15px' src='https://lh3.googleusercontent.com/pw/ADCreHcLGtLsqTw_jXNKvA6xNl8Wln3GQkXM4JWPZATsCL77uzfkDzXbNJR1334isWnx7rtu-Gg2DL-yR_POj5wFa14JPC4Aqmg_5lpWnU7zAKPR64GsXPEi79m7DSHTra7mVlgQs8ackwxYsNn0ZbkjIGzMdQ'>",
+          "answer": "Who is Old Man Marley?",
+          "answer-media": ""
         },
         {
           "value": 600,
           "question": "This film featuring Owen Wilson and Jennifer Aniston was released on Christmas Day, 2008.",
-          "answer": "What is Marley and Me?"
+          "question-media": "",
+          "answer": "What is Marley and Me?",
+          "answer-media": ""
         },
         {
           "value": 800,
-          "question": "The actress seen here is wishing us a Happy Hanukkah in American Sign Language.<br> <img style='border: 2px solid #363636; width:300px; margin:15px' src='https://lh3.googleusercontent.com/pw/ADCreHdtlLaPNFjMnAH9Hf8_cKhZSzcmlAwpiMYOY_YsNAcjfgmsP17wy265R-tak7fqihcZv7loKg606_DEdTu2scxRBo2bzAt4Y3wrGMbgu7yfH6U8Hc32fOBUyXIkNBoy5WnT4h7j0r3fxMQVO7EkGY8Wcw' alt='An attractive woman says Happy Hanukkah in ASL. She eats a cookie.'>",
-          "answer": "Who is Marlee Matlin?"
+          "question": "The actress seen here is wishing us a Happy Hanukkah in American Sign Language.",
+          "question-media": "<img style='border: 2px solid #363636; width:300px; margin:15px' src='https://lh3.googleusercontent.com/pw/ADCreHdtlLaPNFjMnAH9Hf8_cKhZSzcmlAwpiMYOY_YsNAcjfgmsP17wy265R-tak7fqihcZv7loKg606_DEdTu2scxRBo2bzAt4Y3wrGMbgu7yfH6U8Hc32fOBUyXIkNBoy5WnT4h7j0r3fxMQVO7EkGY8Wcw' alt='An attractive woman says Happy Hanukkah in ASL. She eats a cookie.'>",
+          "answer": "Who is Marlee Matlin?",
+          "answer-media": ""
         }
       ]
     }
