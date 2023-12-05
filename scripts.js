@@ -76,21 +76,12 @@ function showQuestionModal(question, answer) {
 
   const modal = document.createElement('div');
   modal.className = 'modal';
-  
-  const modalContent = document.createElement('div');
-  modalContent.className = 'modal-content';
-
-  const questionHeader = document.createElement('h2');
-  questionHeader.textContent = 'Answer';
-
-  const questionText = document.createElement('p');
-  questionText.className = 'question';
-  questionText.textContent = question;
-
-  modalContent.appendChild(questionHeader);
-  modalContent.appendChild(questionText);
-  modal.appendChild(modalContent);
-
+  modal.innerHTML = `
+    <div class="modal-content">
+      <h2>Answer</h2>
+      <p class="question">${question}</p>
+    </div>
+  `;
   document.body.appendChild(modal);
   document.body.style.overflow = 'hidden';
 
@@ -111,21 +102,12 @@ function showAnswerModal(answer) {
 
   const modal = document.createElement('div');
   modal.className = 'modal';
-  
-  const modalContent = document.createElement('div');
-  modalContent.className = 'modal-content';
-
-  const answerHeader = document.createElement('h2');
-  answerHeader.textContent = 'Question';
-
-  const answerText = document.createElement('p');
-  answerText.className = 'answer';
-  answerText.textContent = answer;
-
-  modalContent.appendChild(answerHeader);
-  modalContent.appendChild(answerText);
-  modal.appendChild(modalContent);
-
+  modal.innerHTML = `
+    <div class="modal-content">
+      <h2>Question</h2>
+      <p class="answer">${answer}</p>
+    </div>
+  `;
   document.body.appendChild(modal);
   document.body.style.overflow = 'hidden';
 
@@ -133,7 +115,6 @@ function showAnswerModal(answer) {
     closeModal();
   });
 }
-
 
 function closeModal() {
   const modal = document.querySelector('.modal');
