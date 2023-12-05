@@ -31,7 +31,7 @@ body {
 
 .grid-content-text, .category-text {
   display: flex;
-  vertical-align: middle;
+  align-items: center;
 }
 
 .category-title {
