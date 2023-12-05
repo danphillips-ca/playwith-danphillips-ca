@@ -125,7 +125,7 @@ footer {
   padding: 20px;
   padding-top: 40px;
   position: fixed; /* Fixed positioning */
-  bottom: 0; /* Stick to the bottom */
+  bottom: -20px; /* Stick to the bottom */
   width: 100%; /* Occupy full width */
 }
 footer a {
