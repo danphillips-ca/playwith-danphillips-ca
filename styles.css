@@ -19,7 +19,7 @@ body {
 .category-title, .jeopardy-question {
   border: 6px solid black;
   padding: 20px;
-  min-height: 100px;
+  min-height: 90px;
   text-align: center;
   cursor: pointer;
   font-weight: bold;
@@ -112,7 +112,7 @@ footer {
   line-height: 1.5;
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   text-align: left;
-  padding: 20px;
+  padding: 25px;
   position: fixed; /* Fixed positioning */
   bottom: 0; /* Stick to the bottom */
   width: 100%; /* Occupy full width */
