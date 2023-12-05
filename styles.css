@@ -122,7 +122,8 @@ footer {
   line-height: 1.5;
   font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
   text-align: left;
-  padding: 25px;
+  padding: 20px;
+  padding-top: 40px;
   position: fixed; /* Fixed positioning */
   bottom: 0; /* Stick to the bottom */
   width: 100%; /* Occupy full width */
