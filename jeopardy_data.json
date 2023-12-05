@@ -65,8 +65,8 @@
         },
         {
           "value": 600,
-          "question": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/sFJAk89t4kA' title='Prompt' frameborder='0'></iframe>",
-          "answer": "<iframe width='100%' height='100%' src='https://www.youtube.com/embed/7ea__mxmezQ' title='Result' frameborder='0'></iframe>"
+          "question": "<iframe width='100%' height='750px' src='https://www.youtube.com/embed/sFJAk89t4kA' title='Prompt' frameborder='0'></iframe>",
+          "answer": "<iframe width='100%' height='750px' src='https://www.youtube.com/embed/7ea__mxmezQ' title='Result' frameborder='0'></iframe>"
         },
         {
           "value": 800,
