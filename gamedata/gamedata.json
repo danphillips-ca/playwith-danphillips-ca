@@ -35,7 +35,7 @@
         },
         {
           "value": 400,
-          "question": "The loudest of the deer family, one of these can be heard making it's <i>bugle</i> in this audio clip.<br><br><audio controls><source src='/gamedata/media/Reindeer Trivia Question.mp3' type='audio/mpeg'>Your browser does not support the audio element.</audio>",
+          "question": "The loudest of the deer family, one of these can be heard making it's <i>bugle</i> in this audio clip.<br><br><audio controls><source src='/media/Reindeer Trivia Question.mp3' type='audio/mpeg'>Your browser does not support the audio element.</audio>",
           "answer": "What is an Elk?"
         },
         {
