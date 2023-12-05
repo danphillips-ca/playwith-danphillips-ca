@@ -58,7 +58,7 @@ body {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
-  height: 90%;
+  width: 75%;
   max-width: 1000px; /* Set maximum width */
   min-height: 40%;
   max-height: 90%;
