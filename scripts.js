@@ -29,7 +29,7 @@ function displayJeopardyBoard(categories) {
 
     const categoryTitleSpan = document.createElement('span');
     categoryTitleSpan.className = 'category-text';
-    categoryTitleSpan.textContent = category.title;
+    categoryTitleSpan.innerHTML = category.title.replace(/\n/g, '<br>'); // Adding <br> for line breaks
 
     categoryTitleDiv.appendChild(categoryTitleSpan);
     categoryDiv.appendChild(categoryTitleDiv);
@@ -40,7 +40,7 @@ function displayJeopardyBoard(categories) {
 
       const questionTextSpan = document.createElement('span');
       questionTextSpan.className = 'grid-content-text';
-      questionTextSpan.textContent = `$${question.value}`;
+      questionTextSpan.innerHTML = `$${question.value}`.replace(/\n/g, '<br>'); // Adding <br> for line breaks
 
       questionDiv.appendChild(questionTextSpan);
 
