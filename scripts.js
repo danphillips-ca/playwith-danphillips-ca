@@ -1,4 +1,3 @@
-User
 // Create an object to keep track of selected questions
 const selectedQuestions = {};
 
@@ -82,6 +81,47 @@ function showAnswerModal(answer) {
     questionModal = null;
   }
 
+  // Fetch the usernames from the JSON file
+  fetch('scoreboards/users.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(users => {
+      const modal = document.createElement('div');
+      modal.className = 'modal';
+      modal.innerHTML = `
+        <div class="modal-content">
+          <h2>Question</h2>
+          <p class="answer">${answer}</p>
+          <div class="user-buttons"></div>
+        </div>
+      `;
+      document.body.appendChild(modal);
+      document.body.style.overflow = 'hidden';
+
+      // Create buttons for each user
+      const userButtonsDiv = modal.querySelector('.user-buttons');
+      users.slice(0, 3).forEach(user => {
+        const button = document.createElement('button');
+        button.textContent = user.username;
+        button.className = 'user-button';
+        button.addEventListener('click', () => handleUserSelection(user.username, answer));
+        userButtonsDiv.appendChild(button);
+      });
+    })
+    .catch(error => {
+      console.error('There was a problem fetching the usernames:', error);
+      // Handle error loading usernames
+    });
+
+  modal.addEventListener('click', function () {
+    closeModal();
+  });
+}
+
   const modal = document.createElement('div');
   modal.className = 'modal';
   modal.innerHTML = `
@@ -109,3 +149,36 @@ function closeModal() {
     }
   }
 }
+
+function handleUserSelection(username, answer) {
+  fetch('scoreboards/users.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(users => {
+      const selectedUser = users.find(user => user.username === username);
+      if (selectedUser) {
+        // Update the user's score by adding the dollar amount (parsing it from the answer)
+        const dollarAmount = parseInt(answer.replace('$', ''), 10);
+        selectedUser.score += dollarAmount;
+
+        // Here, you might want to update the user's score on your server/database.
+        // For this example, let's assume it's being handled on the client-side only.
+
+        // Log the updated user score
+        console.log(`User "${username}" selected. Answer: ${answer}. Updated score: ${selectedUser.score}`);
+      } else {
+        console.error(`User "${username}" not found.`);
+      }
+      closeModal();
+    })
+    .catch(error => {
+      console.error('There was a problem fetching the usernames:', error);
+      // Handle error loading usernames or updating scores
+      closeModal();
+    });
+}
+
