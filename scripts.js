@@ -11,24 +11,16 @@ fetch('gamedata/gamedata.json')
       categoriesRow.innerHTML += `<th>${category.title}</th>`;
     });
 
-    // Create rows for dollar values and cells
-    const maxQuestions = Math.max(...data.categories.map(category => category.questions.length));
-    for (let i = 0; i < maxQuestions; i++) {
-      const row = document.createElement('tr');
-      data.categories.forEach(category => {
-        const questions = category.questions;
-        if (questions[i]) {
-          const question = questions[i];
-          const cell = document.createElement('td');
-          cell.textContent = `$${question.value}`;
-          cell.addEventListener('click', () => openQuestionModal(category.title, question));
-          row.appendChild(cell);
-        } else {
-          row.innerHTML += '<td></td>';
-        }
+    // Populate dollar values and cells
+    data.categories.forEach(category => {
+      const categoryQuestions = category.questions;
+      categoryQuestions.forEach(question => {
+        const cell = document.createElement('td');
+        cell.textContent = `$${question.value}`;
+        cell.addEventListener('click', () => openQuestionModal(category.title, question));
+        body.appendChild(cell);
       });
-      body.appendChild(row);
-    }
+    });
   })
   .catch(error => console.error('Error fetching data:', error));
 
