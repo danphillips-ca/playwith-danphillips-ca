@@ -49,21 +49,13 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-// Example event listener for an answer button click in the question modal
-const showAnswerButton = document.getElementById('showAnswerButton');
-showAnswerButton.addEventListener('click', function () {
-  const category = document.getElementById('questionHeader').innerText.split(' - ')[0]; // Extracts category from the question modal header
-  const value = parseInt(document.getElementById('questionHeader').innerText.split(' - ')[1].replace('$', '')); // Extracts value from the question modal header
-  const answer = document.getElementById('answer').innerText; // Gets the answer content from the answer modal
-  const answerMedia = document.getElementById('answerMedia').innerHTML; // Gets the answer media from the answer modal
-
-  // Now you can use these retrieved values as needed
-  console.log("Category:", category);
-  console.log("Value:", value);
-  console.log("Answer:", answer);
-  console.log("Answer Media:", answerMedia);
-});
-
+  // Example event listener for an answer button click in the question modal
+  const showAnswerButton = document.getElementById('showAnswerButton');
+  showAnswerButton.addEventListener('click', function () {
+    const category = /* Get category */;
+    const value = /* Get value */;
+    const answer = /* Get answer */;
+    const answerMedia = /* Get answer media */;
     
     openAnswerModal(category, value, answer, answerMedia);
   });
