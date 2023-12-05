@@ -24,16 +24,25 @@ function displayJeopardyBoard(categories) {
     const categoryDiv = document.createElement('div');
     categoryDiv.className = 'jeopardy-category';
 
-    // Create a div specifically for category title
     const categoryTitleDiv = document.createElement('div');
     categoryTitleDiv.className = 'category-title';
-    categoryTitleDiv.textContent = category.title;
+
+    const categoryTitleSpan = document.createElement('span');
+    categoryTitleSpan.className = 'category-text';
+    categoryTitleSpan.textContent = category.title;
+
+    categoryTitleDiv.appendChild(categoryTitleSpan);
     categoryDiv.appendChild(categoryTitleDiv);
 
     category.questions.forEach(question => {
       const questionDiv = document.createElement('div');
       questionDiv.className = 'jeopardy-question';
-      questionDiv.textContent = `$${question.value}`;
+
+      const questionTextSpan = document.createElement('span');
+      questionTextSpan.className = 'grid-content-text';
+      questionTextSpan.textContent = `$${question.value}`;
+
+      questionDiv.appendChild(questionTextSpan);
 
       if (selectedQuestions[question.value]) {
         questionDiv.classList.add('question-selected');
