@@ -125,7 +125,9 @@ h1 {
   color: transparent; /* Make the text transparent */
 }
 
-span {
+.holiday {
+  font-size: inherit; /* Inherit font size from the parent h1 */
+  display: inline-block; /* Make the container inline-block to enable animation */
   animation: rotateColors 6s linear infinite; /* Adjust duration as needed */
 }
 
