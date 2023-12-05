@@ -58,7 +58,7 @@ body {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
-  border-color: #363636;
+  border-color: #363636 !important;
   width: 90%;
   height: 90%;
   max-width: 1000px; /* Set maximum width */
