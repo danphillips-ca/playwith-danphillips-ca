@@ -17,7 +17,7 @@ body {
 
 .category-title, .jeopardy-question {
   border: 6px solid black; /* Thicker border */
-  padding: 20px; /* Increased padding */
+  padding: 50%; /* Increased padding */
   min-height: 100px;
   text-align: center;
   cursor: pointer;
