@@ -108,36 +108,3 @@ function closeModal() {
     }
   }
 }
-
-function handleUserSelection(username, answer) {
-  fetch('scoreboards/users.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
-    .then(users => {
-      const selectedUser = users.find(user => user.username === username);
-      if (selectedUser) {
-        // Update the user's score by adding the dollar amount (parsing it from the answer)
-        const dollarAmount = parseInt(answer.replace('$', ''), 10);
-        selectedUser.score += dollarAmount;
-
-        // Here, you might want to update the user's score on your server/database.
-        // For this example, let's assume it's being handled on the client-side only.
-
-        // Log the updated user score
-        console.log(`User "${username}" selected. Answer: ${answer}. Updated score: ${selectedUser.score}`);
-      } else {
-        console.error(`User "${username}" not found.`);
-      }
-      closeModal();
-    })
-    .catch(error => {
-      console.error('There was a problem fetching the usernames:', error);
-      // Handle error loading usernames or updating scores
-      closeModal();
-    });
-}
-
