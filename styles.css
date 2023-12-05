@@ -23,18 +23,18 @@ body {
   text-align: center;
   cursor: pointer;
   font-weight: bold;
-  font-size: 30px;
   color: white;
   text-shadow: 1px 1px 2px black;
   background-color: #0055AA;
 }
 
-.category-text {
+.category-title {
+  font-size: 30px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.grid-content-text {
+.jeopardy-question {
   font-size: 40px;
   padding: 25px;
 }
