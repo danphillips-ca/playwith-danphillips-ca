@@ -23,7 +23,12 @@ function displayJeopardyBoard(categories) {
   categories.forEach(category => {
     const categoryDiv = document.createElement('div');
     categoryDiv.className = 'jeopardy-category';
-    categoryDiv.textContent = category.title;
+
+    // Create a div specifically for category title
+    const categoryTitleDiv = document.createElement('div');
+    categoryTitleDiv.className = 'category-title';
+    categoryTitleDiv.textContent = category.title;
+    categoryDiv.appendChild(categoryTitleDiv);
 
     category.questions.forEach(question => {
       const questionDiv = document.createElement('div');
