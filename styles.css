@@ -119,38 +119,24 @@ footer a:hover {
 
 
 /* Christmas lights */
-/* Define the initial state of the Christmas lights effect */
 h1 {
   text-align: center;
-  font-size: 48px; /* Adjust font size as needed */
-  color: transparent; /* Make the text transparent */
-  /* Set the initial shadow effect */
-  text-shadow: 0 0 5px #ff0000, /* Red */
-               0 0 10px #00ff00, /* Green */
-               0 0 15px #0000ff, /* Blue */
-               0 0 20px #ffff00, /* Yellow */
-               0 0 25px #ff00ff, /* Magenta */
-               0 0 30px #00ffff; /* Cyan */
-  /* Set up the animation */
-  animation: flicker 1.5s infinite alternate; /* Adjust duration as needed */
+  font-size: 36px; /* Adjust font size as needed */
 }
 
-/* Define the keyframes for the flickering effect */
+/* Define the glow effect for individual letters */
+.light1, .light2, .light3 {
+  animation: flicker 1s infinite alternate; /* Adjust duration as needed */
+}
+
 @keyframes flicker {
   0% {
-    text-shadow: 0 0 5px #ff0000, /* Red */
-                 0 0 10px #00ff00, /* Green */
-                 0 0 15px #0000ff, /* Blue */
-                 0 0 20px #ffff00, /* Yellow */
-                 0 0 25px #ff00ff, /* Magenta */
-                 0 0 30px #00ffff; /* Cyan */
+    color: red; /* Red glow for first letter */
   }
-  100% {
-    text-shadow: 0 0 10px #ff0000, /* Red */
-                 0 0 20px #00ff00, /* Green */
-                 0 0 30px #0000ff, /* Blue */
-                 0 0 40px #ffff00, /* Yellow */
-                 0 0 50px #ff00ff, /* Magenta */
-                 0 0 60px #00ffff; /* Cyan */
+  33% {
+    color: green; /* Green glow for second letter */
+  }
+  66% {
+    color: blue; /* Blue glow for third letter */
   }
 }
