@@ -1,64 +1,60 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const categoryTitles = document.querySelector('.category-titles');
-  const questionValues = document.querySelector('.question-values');
-  const modal = document.querySelector('.modal-content');
-  const modalTitle = document.querySelector('.modal-title');
-  const questionText = document.querySelector('.question-text');
-  const questionMedia = document.querySelector('.question-media');
-  const answerText = document.querySelector('.answer-text');
-  const answerMedia = document.querySelector('.answer-media');
-  const modalClose = document.querySelector('.modal-close');
+document.addEventListener('DOMContentLoaded', function () {
+  // Get the modal elements
+  const questionModal = document.getElementById('questionModal');
+  const answerModal = document.getElementById('answerModal');
 
-  let data; // Variable to hold the loaded JSON data
+  // Function to open question modal
+  function openQuestionModal(category, value, question, questionMedia) {
+    // Set the question modal content
+    document.getElementById('questionHeader').innerText = `${category} - $${value}`;
+    document.getElementById('question').innerText = question;
+    document.getElementById('questionMedia').innerHTML = questionMedia;
 
-  // Fetch JSON data
-  fetch('gamedata/gamedata.json')
-    .then(response => response.json())
-    .then(jsonData => {
-      data = jsonData;
+    // Display the question modal
+    questionModal.style.display = 'block';
 
-      // Populate category titles
-      data.categories.forEach(category => {
-        categoryTitles.innerHTML += `<div>${category.title}</div>`;
-      });
+    // Example event listener for an answer button click in the question modal
+    const showAnswerButton = document.getElementById('showAnswerButton');
+    showAnswerButton.addEventListener('click', function () {
+      const answer = document.getElementById('answer').innerText; // Gets the answer content from the answer modal
+      const answerMedia = document.getElementById('answerMedia').innerHTML; // Gets the answer media from the answer modal
 
-      // Populate question values
-      data.categories[0].questions.forEach(question => {
-        questionValues.innerHTML += `<div data-value="${question.value}">$${question.value}</div>`;
-      });
+      // Now you can use these retrieved values as needed
+      console.log("Category:", category);
+      console.log("Value:", value);
+      console.log("Answer:", answer);
+      console.log("Answer Media:", answerMedia);
 
-      // Handle click events on questions
-      const questions = document.querySelectorAll('.question-values div');
-      questions.forEach(question => {
-        question.addEventListener('click', () => {
-          const value = question.getAttribute('data-value');
-          const category = data.categories[0].title; // You can update this to fetch the relevant category
+      // Call the function to open the answer modal
+      openAnswerModal(category, value, answer, answerMedia);
+    });
+  }
 
-          // Find the selected question
-          const selectedQuestion = data.categories.find(cat => cat.title === category)
-            .questions.find(q => q.value.toString() === value);
+  // Function to open answer modal
+  function openAnswerModal(category, value, answer, answerMedia) {
+    // Set the answer modal content
+    document.getElementById('answerHeader').innerText = `${category} - $${value}`;
+    document.getElementById('answer').innerText = answer;
+    document.getElementById('answerMedia').innerHTML = answerMedia;
 
-          // Populate the modal with question data
-          modalTitle.textContent = `Category: ${category} - Value: $${value}`;
-          questionText.textContent = selectedQuestion.question;
-          questionMedia.innerHTML = selectedQuestion['question-media'];
+    // Display the answer modal
+    answerModal.style.display = 'block';
+  }
 
-          // Show the modal
-          modal.style.display = 'block';
-        });
-      });
-    })
-    .catch(error => console.error('Error fetching data:', error));
+  // Add event listeners or triggers for opening modals
+  // For example, you can add event listeners to table cells or buttons
 
-  // Handle modal close button
-  modalClose.addEventListener('click', () => {
-    modal.style.display = 'none';
+  // Example event listener for a table cell click
+  const tableCells = document.querySelectorAll('#jeopardyTable tbody td');
+  tableCells.forEach(cell => {
+    cell.addEventListener('click', function () {
+      const category = this.dataset.category;
+      const value = parseInt(this.dataset.value);
+      const question = this.dataset.question;
+      const questionMedia = this.dataset.questionMedia;
+
+      openQuestionModal(category, value, question, questionMedia);
+    });
   });
 
-  // Close modal if clicked outside the content
-  window.addEventListener('click', event => {
-    if (event.target === modal) {
-      modal.style.display = 'none';
-    }
-  });
 });
