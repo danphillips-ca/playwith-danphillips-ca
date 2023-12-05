@@ -2,15 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Jeopardy Game</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Jeopardy Trivia Game</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Jeopardy Game</h1>
+  <div class="board">
     <div class="categories"></div>
-    <div class="board"></div>
+    <div class="questions"></div>
   </div>
+
+  <!-- Modal for displaying questions and answers -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="modal-close">&times;</span>
+      <h2 class="modal-title"></h2>
+    </div>
+    <div class="modal-body">
+      <p class="question-text"></p>
+      <div class="question-media"></div>
+      <p class="answer-text"></p>
+      <div class="answer-media"></div>
+    </div>
+  </div>
+  
   <script src="script.js"></script>
 </body>
 </html>
