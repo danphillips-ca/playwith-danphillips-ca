@@ -1,68 +1,111 @@
-// Fetching and processing JSON data
-fetch('gamedata/gamedata.json')
-  .then(response => response.json())
-  .then(data => {
-    const jeopardyTable = document.getElementById('jeopardyTable');
-    const categoriesRow = jeopardyTable.querySelector('thead tr');
-    const body = jeopardyTable.querySelector('tbody');
+User
+// Create an object to keep track of selected questions
+const selectedQuestions = {};
 
-    // Populate category titles in the top row
-    data.categories.forEach(category => {
-      categoriesRow.innerHTML += `<th>${category.title}</th>`;
+document.addEventListener('DOMContentLoaded', function () {
+  fetch('jeopardy_data.json')
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => displayJeopardyBoard(data.categories))
+    .catch(error => {
+      console.error('There was a problem fetching the data:', error);
+      const jeopardyBoard = document.getElementById('jeopardyBoard');
+      jeopardyBoard.innerHTML = 'Failed to load Jeopardy game data. Please try again later.';
+    });
+});
+
+function displayJeopardyBoard(categories) {
+  const jeopardyBoard = document.getElementById('jeopardyBoard');
+
+  categories.forEach(category => {
+    const categoryDiv = document.createElement('div');
+    categoryDiv.className = 'jeopardy-category';
+    categoryDiv.textContent = category.title;
+
+    category.questions.forEach(question => {
+      const questionDiv = document.createElement('div');
+      questionDiv.className = 'jeopardy-question';
+      questionDiv.textContent = `$${question.value}`;
+
+      if (selectedQuestions[question.value]) {
+        questionDiv.classList.add('question-selected');
+        questionDiv.removeEventListener('click', handleClick);
+      } else {
+        questionDiv.addEventListener('click', handleClick);
+      }
+
+      function handleClick() {
+        selectedQuestions[question.value] = true;
+        questionDiv.classList.add('question-selected');
+
+        showQuestionModal(question.question, question.answer);
+        questionDiv.removeEventListener('click', handleClick);
+      }
+
+      categoryDiv.appendChild(questionDiv);
     });
 
-    // Populate dollar values and cells
-    data.categories.forEach(category => {
-      const categoryQuestions = category.questions;
-      categoryQuestions.forEach(question => {
-        const cell = document.createElement('td');
-        cell.textContent = `$${question.value}`;
-        cell.addEventListener('click', () => openQuestionModal(category.title, question));
-        body.appendChild(cell);
-      });
-    });
-  })
-  .catch(error => console.error('Error fetching data:', error));
-
-// Function to open question modal
-function openQuestionModal(category, question) {
-  const questionModal = document.getElementById('questionModal');
-  const questionHeader = document.getElementById('questionHeader');
-  const questionContent = document.getElementById('question');
-  const questionMedia = document.getElementById('questionMedia');
-
-  questionHeader.textContent = `${category} - $${question.value}`;
-  questionContent.textContent = question.question;
-  questionMedia.innerHTML = question['question-media'] || '';
-
-  questionModal.style.display = 'block';
-
-  // Event listener to open answer modal when question modal is clicked
-  questionModal.addEventListener('click', () => openAnswerModal(category, question), { once: true });
-
-  // Close the modal when clicking the close button
-  const closeModal = questionModal.querySelector('.close');
-  closeModal.addEventListener('click', () => {
-    questionModal.style.display = 'none';
+    jeopardyBoard.appendChild(categoryDiv);
   });
 }
 
-// Function to open answer modal
-function openAnswerModal(category, question) {
-  const answerModal = document.getElementById('answerModal');
-  const answerHeader = document.getElementById('answerHeader');
-  const answerContent = document.getElementById('answer');
-  const answerMedia = document.getElementById('answerMedia');
+let questionModal = null; // Variable to store the current question modal
 
-  answerHeader.textContent = `${category} - $${question.value}`;
-  answerContent.textContent = question.answer;
-  answerMedia.innerHTML = question['answer-media'] || '';
+function showQuestionModal(question, answer) {
+  closeModal();
 
-  answerModal.style.display = 'block';
+  const modal = document.createElement('div');
+  modal.className = 'modal';
+  modal.innerHTML = `
+    <div class="modal-content">
+      <h2>Answer</h2>
+      <p class="question">${question}</p>
+    </div>
+  `;
+  document.body.appendChild(modal);
+  document.body.style.overflow = 'hidden';
 
-  // Close the modal when clicking the close button
-  const closeModal = answerModal.querySelector('.close');
-  closeModal.addEventListener('click', () => {
-    answerModal.style.display = 'none';
+  questionModal = modal;
+
+  modal.addEventListener('click', function () {
+    showAnswerModal(answer);
   });
+}
+
+function showAnswerModal(answer) {
+  if (questionModal !== null) {
+    questionModal.remove();
+    questionModal = null;
+  }
+
+  const modal = document.createElement('div');
+  modal.className = 'modal';
+  modal.innerHTML = `
+    <div class="modal-content">
+      <h2>Question</h2>
+      <p class="answer">${answer}</p>
+    </div>
+  `;
+  document.body.appendChild(modal);
+  document.body.style.overflow = 'hidden';
+
+  modal.addEventListener('click', function () {
+    closeModal();
+  });
+}
+
+function closeModal() {
+  const modal = document.querySelector('.modal');
+  if (modal) {
+    modal.remove();
+    document.body.style.overflow = '';
+    if (questionModal !== null) {
+      questionModal.remove();
+      questionModal = null;
+    }
+  }
 }

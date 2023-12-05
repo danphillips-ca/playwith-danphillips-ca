@@ -1,34 +1,144 @@
-/* Styles for the modals and overlay */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.7);
+/* Add your CSS styling here */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eee;
+  color: #fff;
+  height: 100%; /* Set body height to 100% for proper footer positioning */
+}
+
+.jeopardy-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0px;
+  margin: 20px;
+}
+
+.jeopardy-category {
+  border-top: 8px solid black; /* Thicker top border */
+  border-bottom: 8px solid black; /* Thicker top border */
+  border-left: 6px solid black; /* Thicker left border */
+  border-right: 6px solid black; /* Thicker right border */
+  padding-top: 25px; /* Increased padding top */
+  padding-bottom: 15px; /* Add space beneath the text */
+  margin-bottom: 10px; /* Added margin bottom for space under text */
+  text-align: center;
+  font-weight: bold;
+  font-size: 28px; /* Increased font size for category names */
+  background-color: #0055AA;
+  text-shadow: 1px 1px 2px black; /* Added text shadow */
+}
+
+.jeopardy-question {
+  border-top: 6px solid black; /* Thicker border */
+  border-left: none;
+  border-right: none;
+  margin-top: 6px;
+  padding: 20px; /* Increased padding */
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 32px; /* Larger font size for questions */
+  color: #ffcc00;
+  text-shadow: 1px 1px 2px black;
+  background-color: #0055AA;
+}
+
+.question-selected {
+  color: #807A55 !important;
 }
 
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
+  background-color: #fff;
   padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
+  border-radius: 8px;
+  width: 90%;
+  height: 90%;
+  max-width: 1000px; /* Set maximum width */
+  max-height: 90%;
+  overflow-y: auto;
+  text-align: center;
+  font-size: 22px; /* Larger font size for modal content */
+  color: #000;
+  margin: auto; /* Center the modal content */
+  position: fixed; /* Fixed positioning */
+  top: 50%; /* Position from top */
+  left: 50%; /* Position from left */
+  transform: translate(-50%, -50%); /* Center horizontally and vertically */
+  z-index: 9999; /* Set a higher z-index to ensure it appears above other elements */
+  vertical-align: middle;
 }
 
-.close {
-  color: #aaa;
-  float: right;
+.modal-content h2 {
+  color: #d3d3d3;
+  margin-left: 20px
+}
+
+
+.question, .answer {
+  font-size: 40px; /* Increase the font size */
+  text-align: center; /* Center the text */
+  height: 80%;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Vertically center the content */
+  justify-content: center; /* Horizontally center the content */
+  flex-direction: column; /* Stack elements in a column */
+}
+
+/*SCOREBOARD FORMATTING*/
+#scoreboard {
+  margin: 20px;
+}
+.score-column {
+  float: left;
+  width: calc(100% / 3);
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
   font-size: 28px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.score-column p {
+  color: #363636;
+  margin: 5px 0;
+}
+.score-column strong {
+  color: #0055AA;
+  font-size: 32px;
+  margin: 5px;
+  font-family: Kalam;
   font-weight: bold;
 }
+/*END SCOREBOARD FORMATTING*/
 
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+
+/*FOOTER FORMATTING*/
+footer {
+  background-color: #d6d6d6;
+  color: #363636;
+  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+  text-align: left;
+  padding: 20px;
+  position: fixed; /* Fixed positioning */
+  bottom: 0; /* Stick to the bottom */
+  width: 100%; /* Occupy full width */
 }
+footer a {
+  font-weight: bold;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease-in-out;
+  color: #363636;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+.content {
+  padding-bottom: 80px; /* Adjust this value according to your footer's height */
+}
+/*END FOOTER FORMATTING*/
