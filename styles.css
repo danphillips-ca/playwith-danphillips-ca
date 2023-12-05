@@ -34,18 +34,21 @@ body {
   padding-bottom: 30px;
 }
 
-.jeopardy-question {
-  font-size: 40px;
-  padding: 25px;
-}
-
 .category-title {
   color: white;
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
 }
 
 .jeopardy-question {
+  font-size: 40px;
   color: #ffcc00;
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
 }
+
 
 .question-selected {
   color: #807A55 !important;
@@ -78,6 +81,7 @@ body {
 }
 
 
+
 .question, .answer {
   font-size: 40px; /* Increase the font size */
   text-align: center; /* Center the text */
@@ -87,33 +91,6 @@ body {
   justify-content: center; /* Horizontally center the content */
   flex-direction: column; /* Stack elements in a column */
 }
-
-/*SCOREBOARD FORMATTING*/
-.scoreboard-banner {
-  margin: 20px;
-  background: grey;
-}
-.score-column {
-  float: left;
-  width: calc(100% / 3);
-  box-sizing: border-box;
-  padding: 10px;
-  text-align: center;
-  color: #363636;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.score-column p {
-  margin: 5px 0;
-}
-.score-column strong {
-  font-weight: bold;
-}
-/*END SCOREBOARD FORMATTING*/
-
 
 /*FOOTER FORMATTING*/
 footer {
