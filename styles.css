@@ -127,48 +127,55 @@ h1 {
 
 span {
   font-size: inherit; /* Inherit font size from the parent h1 */
+  animation: rotateColors 6s linear infinite; /* Adjust duration as needed */
 }
 
 /* Define the styles for each letter's glow effect */
-.light1 {
+.lights:nth-child(1) {
   color: #ff0000; /* Red */
-  animation: glow1 1s infinite alternate;
 }
 
-.light2 {
+.lights:nth-child(2) {
   color: #00ff00; /* Green */
-  animation: glow2 1s infinite alternate;
 }
 
-.light3 {
-  color: #0000ff; /* Blue */
-  animation: glow3 1s infinite alternate;
+.lights:nth-child(3) {
+  color: #ffd700; /* Gold */
 }
 
-/* Define keyframes for each glow effect */
-@keyframes glow1 {
+.lights:nth-child(4) {
+  color: #008000; /* Dark Green */
+}
+
+.lights:nth-child(5) {
+  color: #c0c0c0; /* Silver */
+}
+
+.lights:nth-child(6) {
+  color: #ff0000; /* Red */
+}
+
+/* Keyframes for rotating colors */
+@keyframes rotateColors {
   0% {
-    text-shadow: 0 0 5px #ff0000; /* Red glow */
+    color: #ff0000; /* Red */
+  }
+  16.6% {
+    color: #00ff00; /* Green */
+  }
+  33.3% {
+    color: #ffd700; /* Gold */
+  }
+  50% {
+    color: #008000; /* Dark Green */
+  }
+  66.6% {
+    color: #c0c0c0; /* Silver */
+  }
+  83.3% {
+    color: #ff0000; /* Red */
   }
   100% {
-    text-shadow: 0 0 20px #ff0000; /* Increase glow size */
-  }
-}
-
-@keyframes glow2 {
-  0% {
-    text-shadow: 0 0 5px #00ff00; /* Green glow */
-  }
-  100% {
-    text-shadow: 0 0 20px #00ff00; /* Increase glow size */
-  }
-}
-
-@keyframes glow3 {
-  0% {
-    text-shadow: 0 0 5px #0000ff; /* Blue glow */
-  }
-  100% {
-    text-shadow: 0 0 20px #0000ff; /* Increase glow size */
+    color: #ff0000; /* Red */
   }
 }
