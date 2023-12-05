@@ -121,22 +121,54 @@ footer a:hover {
 /* Christmas lights */
 h1 {
   text-align: center;
-  font-size: 36px; /* Adjust font size as needed */
+  font-size: 48px; /* Adjust font size as needed */
+  color: transparent; /* Make the text transparent */
 }
 
-/* Define the glow effect for individual letters */
-.light1, .light2, .light3 {
-  animation: flicker 1s infinite alternate; /* Adjust duration as needed */
+span {
+  font-size: inherit; /* Inherit font size from the parent h1 */
 }
 
-@keyframes flicker {
+/* Define the styles for each letter's glow effect */
+.light1 {
+  color: #ff0000; /* Red */
+  animation: glow1 1s infinite alternate;
+}
+
+.light2 {
+  color: #00ff00; /* Green */
+  animation: glow2 1s infinite alternate;
+}
+
+.light3 {
+  color: #0000ff; /* Blue */
+  animation: glow3 1s infinite alternate;
+}
+
+/* Define keyframes for each glow effect */
+@keyframes glow1 {
   0% {
-    color: red; /* Red glow for first letter */
+    text-shadow: 0 0 5px #ff0000; /* Red glow */
   }
-  33% {
-    color: green; /* Green glow for second letter */
+  100% {
+    text-shadow: 0 0 20px #ff0000; /* Increase glow size */
   }
-  66% {
-    color: blue; /* Blue glow for third letter */
+}
+
+@keyframes glow2 {
+  0% {
+    text-shadow: 0 0 5px #00ff00; /* Green glow */
+  }
+  100% {
+    text-shadow: 0 0 20px #00ff00; /* Increase glow size */
+  }
+}
+
+@keyframes glow3 {
+  0% {
+    text-shadow: 0 0 5px #0000ff; /* Blue glow */
+  }
+  100% {
+    text-shadow: 0 0 20px #0000ff; /* Increase glow size */
   }
 }
