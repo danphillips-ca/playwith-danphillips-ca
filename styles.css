@@ -89,6 +89,7 @@ body {
 /*SCOREBOARD FORMATTING*/
 #scoreboard {
   margin: 20px;
+  background: grey;
 }
 .score-column {
   float: left;
@@ -96,7 +97,7 @@ body {
   box-sizing: border-box;
   padding: 10px;
   text-align: center;
-  color: #0055AA;
+  color: #363636;
   font-size: 28px;
 }
 .row:after {
