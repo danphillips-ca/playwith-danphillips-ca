@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const categoryTitles = document.querySelector('.categories');
-  const questionValues = document.querySelector('.questions');
+  const categoryTitles = document.querySelector('.category-titles');
+  const questionValues = document.querySelector('.question-values');
   const modal = document.querySelector('.modal-content');
   const modalTitle = document.querySelector('.modal-title');
   const questionText = document.querySelector('.question-text');
@@ -11,13 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
   let data; // Variable to hold the loaded JSON data
 
+  // Fetch JSON data
   fetch('gamedata/gamedata.json')
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
+    .then(response => response.json())
     .then(jsonData => {
       data = jsonData;
 
@@ -32,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
       });
 
       // Handle click events on questions
-      const questions = document.querySelectorAll('.questions div');
+      const questions = document.querySelectorAll('.question-values div');
       questions.forEach(question => {
         question.addEventListener('click', () => {
           const value = question.getAttribute('data-value');
@@ -52,10 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
       });
     })
-    .catch(error => {
-      console.error('Error fetching or processing data:', error);
-      // You can add specific error handling or display an error message to the user here
-    });
+    .catch(error => console.error('Error fetching data:', error));
 
   // Handle modal close button
   modalClose.addEventListener('click', () => {
