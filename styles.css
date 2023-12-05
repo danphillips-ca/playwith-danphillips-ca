@@ -29,7 +29,8 @@ body {
   background-color: #0055AA;
 }
 
-.grid-content-text {
+.grid-content-text, .category-text {
+  display: flex;
   vertical-align: middle;
 }
 
