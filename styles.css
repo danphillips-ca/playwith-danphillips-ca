@@ -15,15 +15,6 @@ body {
   margin: 20px;
 }
 
-.jeopardy-category {
-  padding-top: 25px; /* Increased padding top */
-  padding-bottom: 15px; /* Add space beneath the text */
-  margin-bottom: 10px; /* Added margin bottom for space under text */
-  text-align: center;
-  font-weight: bold;
-  font-size: 28px; /* Increased font size for category names */
-}
-
 .category-title, .jeopardy-question {
   border: 6px solid black; /* Thicker border */
   padding: 20px; /* Increased padding */
