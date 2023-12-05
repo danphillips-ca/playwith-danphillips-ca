@@ -116,3 +116,59 @@ footer a:hover {
   text-decoration: underline;
 }
 /*END FOOTER FORMATTING*/
+
+
+/* Christmas lights */
+h1 {
+  text-align: center;
+  font-size: 48px; /* Adjust font size as needed */
+  color: #fff; /* Set your desired text color */
+  /* Add some padding and margin for better visibility */
+  padding: 20px;
+  margin: 20px;
+  /* Set the initial shadow effect */
+  box-shadow: 0 0 10px #fff,
+              0 0 20px #fff,
+              0 0 30px #fff,
+              0 0 40px #ff00de, /* Adjust the glow color as needed */
+              0 0 70px #ff00de,
+              0 0 80px #ff00de,
+              0 0 100px #ff00de,
+              0 0 150px #ff00de;
+  /* Set up the animation */
+  animation: glow 2s ease-in-out infinite; /* Adjust duration as needed */
+}
+
+/* Define the keyframes for the glow effect */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 30px #fff,
+                0 0 40px #ff00de,
+                0 0 70px #ff00de,
+                0 0 80px #ff00de,
+                0 0 100px #ff00de,
+                0 0 150px #ff00de;
+  }
+  50% {
+    box-shadow: 0 0 20px #fff,
+                0 0 30px #fff,
+                0 0 40px #fff,
+                0 0 50px #ff00de,
+                0 0 80px #ff00de,
+                0 0 90px #ff00de,
+                0 0 110px #ff00de,
+                0 0 160px #ff00de;
+  }
+  100% {
+    box-shadow: 0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 30px #fff,
+                0 0 40px #ff00de,
+                0 0 70px #ff00de,
+                0 0 80px #ff00de,
+                0 0 100px #ff00de,
+                0 0 150px #ff00de;
+  }
+}
