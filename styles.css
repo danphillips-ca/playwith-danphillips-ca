@@ -29,8 +29,14 @@ body {
   background-color: #0055AA;
 }
 
+.category-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
 .grid-content-text {
   font-size: 40px;
+  padding: 25px;
 }
 
 .category-title {
