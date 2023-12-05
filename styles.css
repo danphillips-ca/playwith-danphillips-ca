@@ -1,31 +1,44 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const categories = document.querySelector('.categories');
-  const board = document.querySelector('.board');
-  const data = { /* Your provided JSON data here */ };
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  // Display categories
-  data.categories.forEach(category => {
-    categories.innerHTML += `<div>${category.title}</div>`;
-  });
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
 
-  // Display questions
-  data.categories.forEach(category => {
-    category.questions.forEach(question => {
-      const questionDiv = document.createElement('div');
-      questionDiv.classList.add('question');
-      questionDiv.innerHTML = `<span>${question.value}</span>`;
-      questionDiv.addEventListener('click', () => displayQuestion(question));
-      board.appendChild(questionDiv);
-    });
-  });
+h1 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
 
-  // Function to display selected question
-  const displayQuestion = (question) => {
-    const answer = prompt(question.question);
-    if (answer && answer.toLowerCase() === question.answer.toLowerCase()) {
-      alert('Correct!');
-    } else {
-      alert(`Wrong! The correct answer is: ${question.answer}`);
-    }
-  };
-});
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.question {
+  width: 150px;
+  height: 100px;
+  border: 2px solid #333;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.question.clicked {
+  background-color: #ddd;
+  pointer-events: none;
+}
