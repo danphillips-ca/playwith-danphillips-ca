@@ -29,6 +29,10 @@ body {
   background-color: #0055AA;
 }
 
+.grid-content-text {
+  vertical-align: middle;
+}
+
 .category-title {
   color: white;
 }
