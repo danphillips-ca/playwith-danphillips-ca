@@ -71,6 +71,9 @@ let questionModal = null; // Variable to store the current question modal
 function showQuestionModal(question, answer) {
   closeModal();
 
+  question = question.trim(); // Trim the question content
+  answer = answer.trim(); // Trim the answer content
+
   const modal = document.createElement('div');
   modal.className = 'modal';
   modal.innerHTML = `
@@ -94,6 +97,8 @@ function showAnswerModal(answer) {
     questionModal.remove();
     questionModal = null;
   }
+
+  answer = answer.trim(); // Trim the answer content
 
   const modal = document.createElement('div');
   modal.className = 'modal';
